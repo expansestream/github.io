@@ -1,2 +1,243 @@
-# github.io
-Instructions for setting up livestream.
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>livestream instructions</title>
+    <style>
+      html {
+        font-size: 1em;
+      }
+      body {
+        font: 1em Helvetica, Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+        background-color: lemonchiffon;
+      }
+      .wrapper {
+        max-width: 960px;
+        margin: 2em auto;
+      }
+      h4 {
+        font-size: 1rem;
+        margin: 0;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #rainbow-text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: red;
+        text-align: center;
+        padding: 2px;
+        width: 5px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h4>Step 1</h4>
+
+        <ul>
+            <li>Turn on the power from the center control panel: Push top button first, middle button second.</li>
+            <li>Log into the left screen using the pin: <strong>135013</strong>.</li>
+            <li>On the left screen, open Wirecast.</li>
+            <li>On the left screen, go to the top drop down menu <em>File</em>, and slide down to <em>Open Recent</em>.</li>
+            <li>Select the appropriate service document:</li>
+                <ul>
+                    <li>10:30 service <em>/Choral Eucharist.wcst</em></li>
+                    <li>Wilderness <em>/The Wilderness_backup.wcst</em></li>
+                    <li>Weddings, funerals, special services <em>/Choral Eucharist.wcst</em></li>
+                </ul>
+        </ul>
+        
+        <h4>Step 2</h4>
+        
+        <ul>
+            <li>On the right screen, click on the tile overlay entitled <strong>Sermon</strong>.</li>
+            <li>A window entitled <span style="color:orange">Shot Layers</span> should appear.</li>
+            <li>Click on the heading entitled <em>Preacher</em>.</li>
+            <li>Click on the Layer Settings button (the 3 dots in the upper right-hand corner of the <span>Shot Layers</span> window).</li>
+            <li>A text box should appear.</li>
+            <li>Type in the name of the preacher delivering the sermon (found on the last page of the service leaflet) in the field <em>Text:</em><div class=""></div></li>
+            <li>Click on the Sermon overlay to close the Shot Layers window.</li>
+        </ul>
+
+        <h4>Step 3</h4>
+
+        <ul>
+            <li>On the right hand screen, move to the Title Overlays portion of the screen (containing opening screen, sermon, offertory, spiritual communion, closing screen, etc.).</li>
+            <li>Click the large plus sign <strong>(+)</strong>.</li>
+            <li>A dialog box entitled <em>Media Layer 1</em> should appear.</li>
+            <li>Select the option <em>Media Files</em>.</li>
+            <li>Select the option <em>Browse Disk</em>.</li>
+            <LI>Open the <strong>Pictures</strong> <em>folder</em>.</LI>
+            <li>Select the appropriate month.</li>
+            <li>Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo.</li>
+            <li>Select the appropriate Wirecast thumbnail: <strong>CE_[date]</strong> for the Choral Eucharist; <strong>WI_[date]</strong> for the Wilderness.</li>
+        </ul>
+
+        <h4>Step 4</h4>
+
+        <ul>
+            <li>Turn one's attention to the screen on the left.</li>
+            <li>Notice the box with all the buttons. This is the camera controller.</li>
+            <li>Turn it on by pressing the switch located in its back left corner.</li>
+            <li>The camera signals should load in Wirecast as the controller boots up.</li>
+            <li>Press the <strong>PMEM/TMEM</strong> located immediately to the right of the touch screen to load the camera presets.</li>
+        </ul>
+
+        <h4>Step 5</h4>
+
+        <ul>
+            <li>Again, direct attention to the screen on the left.</li>
+            <li>Open Google Chrome.</li>
+            <li>Click <strong>Vimeo</strong> in the Bookmarks bar.</li>
+            <li>A new Bookmarks bar entitled <em>vimeo.com</em>should appear.</li>
+            <li>In the upper right-hand corner of the dialogue box, click the large blue button <strong><span style="color:blue">New Video</span></strong>.</li>
+            <li>In the drop-down menu, select <em>Create Event</em>.</li>
+            <li>In the resulting dialogue box, click <strong>Live Broadcast</strong>.</li>
+            <li>A new dialogue box will appear.  Click the pencil icon at the top.</li>
+            <li>In the text box that appears, type the name of the service:</li>
+                <ul>
+                    <li>For the 10:30 service type <em>Choral Eucharist, Rite II, [date of service]</em></li>
+                    <li>For the Wilderness type <em>The Wilderness, [date of service]</em></li>
+                    <li>For other services type <em>Name of Service, [date of service]</em></li>
+                </ul>
+            <li>Click <em>Save</em>.</li>
+        </ul>
+
+        <h4>Step 6</h4>
+
+        <ul>
+            <li>Continue to direct attention to the screen on the left.</li>
+            <li>Click the button labeled <strong>Choose thumbnail</strong>.</li>
+            <li>Open the <strong>Pictures</strong> <em>folder</em>.</li>
+            <li>Select the appropriate month.</li>
+            <li>As in Wirecast previously, select the thumbnail for today's service and date (found in the appropriate month sub-folder):</li>
+                <ul>
+                    <li> T_CE_[date]</li>
+                    <li> T_WI_[date]</li>
+                </ul>
+            <li>Save, and the preview should change with the updated thumbnail.</li>
+            <li>While still in the dialogue box, make sure that Viewing privacy is set to <strong>Public</strong>.</li>
+        </ul>
+
+        <h4>Step 7</h4>
+
+        <ul>
+            <li>While still in the dialogue box, click the <strong>Destinations</strong> tab to connect to Facebook and YouTube.</li>
+            <li>Select the Saint John's Cathedral account for both and switch both on with the toggle button.</li>
+        </ul>
+
+        <h4>Step 8</h4>
+
+        <ul>
+            <li>Returning to the same dialogue box, select the <strong>Event</strong> tab.</li>
+            <li>A new URL link will be provided.</li>
+            <li>Copy this URL.</li>
+            <li>Open a new browser tab.</li>
+            <li>Paste the copied URL in the Bookmark bar and open it.</li>
+            <li>Press the D key on the keyboard.</li>
+            <li>In the small box appearing in the upper left-hand corner, copy the numeric <strong>Clip ID</strong>.</li>
+            <li>Keep this tab open in case one needs to copy the Clip ID again.</li>
+        </ul>
+
+        <h4>Step 9</h4>
+
+        <ul>
+            <li>Returning to the Bookmark tab entitled <em>vimeo</em>, click on the blue button <strong><span style="color:blue">Manage production</span></strong>.</li>
+            <li>Select <em>Stream with encoder</em>.</li>
+        </ul>
+
+        <h4>Step 10</h4>
+
+        <ul>
+            <li>Open a new browser tab, and click on the <strong>SJC WP Admin</strong> bookmark.</li>
+            <li>Login to the SJCathedral.org page using the pin: <strong>135013</strong>.</li>
+            <li>In the upper left corner of the new dialogue box under Saint John's Cathedral, select <strong>Visit Site</strong>.</li>
+            <li>In the ensuing dialogue box, in the top menu bar, click <strong>Edit Page.</strong></li>
+        </ul>
+
+        <h4>Step 11</h4>
+
+        <ul>
+            <li>In the ensuing dialogue box, scroll down to the section labeled <em>Intro Settings</em>, and select.</li>
+            <li>In the box labeled <em>Video URL</em>, highlight the string of numbers at the end and paste the Clip ID copied previously.</li>
+            <li>Click the blue Update button <strong><span style="color:blue">Update</span></strong> in the <em>Publish</em> dialogue box.</li>
+            <li>One can return to the homepage using the Visit Site button to assure that the homepage has been updated.</li>
+        </ul>
+
+
+        <h4>Step 12</h4>
+
+        <ul>
+            <li>About 10 minutes before the service begins, direct your attention to the screen on the right.</li>
+            <li>Click the <strong>Record</strong> button at the top.</li>
+            <li>In the emerging <em>Output Settings</em> window, in the <strong>Destination</strong> dropdown, select <em>Record to Disk-MOV</em>.</li>
+            <li>In the <em>File</em> field, click <em>Browse</em>, and select <strong>D:</strong>/ drive.</li>
+            <li>Click Save.</li>
+            <li>Click OK.</li>
+            <li>Ignore the warning message.</li>
+            <li>Click the Record button at the top again to begin recording.</li>
+        </ul>
+
+        <h4>Step 13</h4>
+
+        <ul>
+            <li>Continue with the screen on the right.</li>
+            <li>Click the <strong>Stream</strong> button at the top.</li>
+            <li>In the window that appears, go to the Destination dropdown and select <em>RTMP server</em>.</li>
+            <li>Leave this window open.</li>
+        </ul>
+
+        <h4>Step 14</h4>
+
+        <ul>
+            <li>Direct attention to the screen on the left.</li>
+            <li>Returning to the Bookmark tab entitled <em>vimeo</em>, click on the blue button <strong><span style="color:blue">Manage production</span></strong>.</li>
+            <li>Select <em>Stream with encoder</em>.</li>
+            <li>Copy the link labeled <em>RTMPS URL</em> and paste it into the <em>Address</em> section in the Output Settings window in Wirecast (the opened window on the right screen).</li>
+            <li>Copy the <em>Stream Key</em> from Vimeo and paste it into the <em>Stream</em> field in Wirecast (right hand screen).</li>
+            <li>Click OK.</li>
+            <li>Click Stream again at the top.</li>
+            <li>The Stream button will flash green before coming solid.</li>
+            <li>The stream is now live!</li>
+        </ul>
+
+        <h4>Step 15</h4>
+
+        <ul>
+            <li>Set output to <strong><em><span style="color:dimgray">Smooth</span></em></strong> in the Wirecast window (right-hand screen).</li>
+            <li>Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.</li>
+        </ul>
+
+        <h4>Step 16</h4>
+
+        <ul>
+            <li>Once the service is over, end the broadcast by clicking the Stream and Record buttons in Wirecast (top of the right-hand screen).</li>
+            <li>Close the Wirecast window by clicking <span id="rainbow-text">X</span> in the upper right-hand corner.</li>
+            <li>Click Save or Don't Save (generally click Don't Save if new additions like thumbnails don't need to be saved). </li>
+            <li>Close Wirecast. Vimeo will automatically end the broadcast.</li>
+            <li>Close Google Chrome, and shut down the computer:</li>
+                <ul>
+                    <li>Turn off the power from the center control panel:</li>
+                        <ul>
+                            <li>Push the middle button first.</li>
+                            <li>Push the top button second.</li>
+                        </ul>
+                </ul>
+            <li>You're done!</li>
+        </ul>
+
+        <img src="https://softcover.s3.amazonaws.com/636/learn_enough_git/images/figures/celebratory_beverage.jpg" height=100 width=100 alt = "Coffee Break">
+
+       
+    </div> 
+  </body>
+</html>
