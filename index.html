@@ -309,6 +309,8 @@
 
         <dialog id="site">
             <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
+            <br>
+            <br>
             <iframe src="https://sjcathedral.org/funeral-service/" height = 640 width = 450 frameborder = 0 title="Funeral Website"></iframe>
             <button type="reset" id="cancel">Close</button> 
         </dialog>
@@ -323,11 +325,12 @@
            function discreption2() {
                dialog.close();   
            }
+
            document.getElementById("funeralwebsite").addEventListener("click",discreption3,false);
            function discreption3() {
                dialog.showModal();
            }
-           document.getElementById("cancel").addEventListener("click",discreption4,false);
+            document.getElementById("cancel").addEventListener("click",discreption4,false);
            function discreption4() {
                dialog.close();   
            }
