@@ -37,6 +37,19 @@
         display: block;
         margin: 0 auto;;
     }
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: .5em;
+        padding: .5em;
+    }
+    button:hover { cursor: pointer;
+        background-color: lightgreen;
+        }
+        button:active {
+            background-color: limegreen;
+         }
     </style>
 </head>
 
@@ -284,9 +297,26 @@
             
         <br>
 
-        <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="St. John's Cathedral"></iframe>
-    
-        <br>
+        <button type="button" id="cathedralwebsite">Cathedral Website</button>
+
+        <dialog id="site">
+            <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="St. John's Cathedral"></iframe>
+            <button type="reset" id="cancel">Close</button> 
+        </dialog>
+
+        <script>
+            const dialog = document.getElementById("site");
+            document.getElementById("cathedralwebsite").addEventListener("click",discreption1,false);
+           function discreption1() {
+               dialog.showModal();
+           }
+            document.getElementById("cancel").addEventListener("click",discreption2,false);
+           function discreption2() {
+               dialog.close();
+           }
+           </script>
+
+         <br>   
 
     </div>
 
