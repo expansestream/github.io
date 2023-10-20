@@ -308,7 +308,8 @@
         <button type="button" id="cathedralwebsite">Cathedral Website</button>
 
         <dialog id="site">
-            <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="St. John's Cathedral"></iframe>
+            <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
+            <iframe src="https://sjcathedral.org/funeral-service/" height = 640 width = 450 frameborder = 0 title="Funeral Website"></iframe>
             <button type="reset" id="cancel">Close</button> 
         </dialog>
 
@@ -316,13 +317,21 @@
             const dialog = document.getElementById("site");
             document.getElementById("cathedralwebsite").addEventListener("click",discreption1,false);
            function discreption1() {
+               dialog.showModal();   
+           }
+           document.getElementById("cancel").addEventListener("click",discreption2,false);
+           function discreption2() {
+               dialog.close();   
+           }
+           document.getElementById("funeralwebsite").addEventListener("click",discreption3,false);
+           function discreption3() {
                dialog.showModal();
            }
-            document.getElementById("cancel").addEventListener("click",discreption2,false);
-           function discreption2() {
-               dialog.close();
+           document.getElementById("cancel").addEventListener("click",discreption4,false);
+           function discreption4() {
+               dialog.close();   
            }
-           </script>
+        </script>
 
          <br>   
 
