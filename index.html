@@ -103,7 +103,7 @@
             <li>In the title overlay, click the large plus sign <strong>(+)</strong>.</li>
             <li>Click the large plus sign <strong>(+)</strong>.</li>
             <li>In the window that opens, go to <em>Media Files</em> > <em>Browse Disk</em>.</li>
-            <LI>Open the <strong>Pictures</strong> <em>folder</em>.</LI>
+            <LI>Open the <strong>Pictures</strong> <em>folder</em> (if not found, open the <strong>Downloads</strong> <em>folder</em>).</LI>
             <li>The thumbnails are arranged by month, and then by platform.</li>
             <li>Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo.</li>
             <li>Open the <em>Wirecast</em> folder.</li>
@@ -152,7 +152,7 @@
 
         <ul>
             <li>Beneath the video preview, click the button labeled <strong>Choose thumbnail</strong>.</li>
-            <li>Open the <strong>Pictures</strong> <em>folder</em>.</li>
+            <li>Open the <strong>Pictures</strong> <em>folder</em> (if not found, open the <strong>Downloads</strong> <em>folder</em>).</li>
             <li>As before, open the current month's folder, and select the appropriate thumbnail:</li>
                 <ul>
                     <li> Choral Eucharist: <em>T_CE_[date]</em></li>
@@ -307,24 +307,44 @@
 
         <button type="button" id="cathedralwebsite">Cathedral Website</button>
 
+        <br>
+
+        <button type="button" id="funeralwebsite">Funeral Website</button>
+
         <dialog id="site">
             <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
-            <br>
-            <br>
+            <button type="reset" id="cancelsite">Close</button> 
+        </dialog>
+
+        <dialog id="funeral">
             <iframe src="https://sjcathedral.org/funeral-service/" height = 640 width = 450 frameborder = 0 title="Funeral Website"></iframe>
-            <button type="reset" id="cancel">Close</button> 
+            <button type="reset" id="cancelfuneral">Close</button> 
         </dialog>
 
         <script>
-            const dialog = document.getElementById("site");
+            
             document.getElementById("cathedralwebsite").addEventListener("click",discreption1,false);
            function discreption1() {
-               dialog.show();   
+                dialog = document.getElementById("site");
+                dialog.show();   
            }
-           document.getElementById("cancel").addEventListener("click",discreption2,false);
+           document.getElementById("cancelsite").addEventListener("click",discreption2,false);
            function discreption2() {
-               dialog.close();   
+                dialog = document.getElementById("site");
+                dialog.close();   
            }
+
+           document.getElementById("funeralwebsite").addEventListener("click",discreption3,false);
+           function discreption3() {
+                dialog = document.getElementById("funeral");
+                dialog.show();   
+           }
+           document.getElementById("cancelfuneral").addEventListener("click",discreption4,false);
+           function discreption4() {
+                dialog = document.getElementById("funeral");
+                dialog.close();   
+           }
+
         </script>
 
     </div>
