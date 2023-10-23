@@ -312,6 +312,8 @@
 
         <button type="button" id="funeralwebsite">Funeral Website</button>
 
+        <button type="button" id="specialeventwebsite">Special Event Website</button>
+
         <dialog id="site">
             <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
             <button type="reset" id="cancelsite">Close</button> 
@@ -327,40 +329,56 @@
             <button type="reset" id="cancelfuneral">Close</button> 
         </dialog>
 
+        <dialog id="specialevent">
+            <iframe src="https://sjcathedral.org/special-event/" height = 640 width = 450 frameborder = 0 title="Funeral Website"></iframe>
+            <button type="reset" id="cancelspecialevent">Close</button> 
+        </dialog>
+
         <script>
             
             document.getElementById("cathedralwebsite").addEventListener("click",discreption1,false);
            function discreption1() {
                 dialog = document.getElementById("site");
                 dialog.show();   
-           }
+           };
            document.getElementById("cancelsite").addEventListener("click",discreption2,false);
            function discreption2() {
                 dialog = document.getElementById("site");
                 dialog.close();   
-           }
+           };
 
            document.getElementById("weddingwebsite").addEventListener("click",discreption3,false);
            function discreption3() {
                 dialog = document.getElementById("wedding");
                 dialog.show();   
-           }
+           };
            document.getElementById("cancelwedding").addEventListener("click",discreption4,false);
            function discreption4() {
                 dialog = document.getElementById("wedding");
                 dialog.close();   
-           }
+           };
 
            document.getElementById("funeralwebsite").addEventListener("click",discreption5,false);
            function discreption5() {
                 dialog = document.getElementById("funeral");
                 dialog.show();   
-           }
+           };
            document.getElementById("cancelfuneral").addEventListener("click",discreption6,false);
            function discreption6() {
                 dialog = document.getElementById("funeral");
                 dialog.close();   
-           }
+           };
+
+           document.getElementById("specialeventwebsite").addEventListener("click",discreption5,false);
+           function discreption5() {
+                dialog = document.getElementById("specialevent");
+                dialog.show();   
+           };
+           document.getElementById("cancelspecialevent").addEventListener("click",discreption6,false);
+           function discreption6() {
+                dialog = document.getElementById("specialevent");
+                dialog.close();   
+           };
 
         </script>
 
