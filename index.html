@@ -320,7 +320,7 @@
         </dialog>
 
         <dialog id="wedding">
-            <iframe src="https://www.SJCathedral.org/wedding-service/" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
+            <iframe src="https://www.SJCathedral.org/wedding-service/" height = 640 width = 450 frameborder = 0 title="Wedding Website"></iframe>
             <button type="reset" id="cancelwedding">Close</button> 
         </dialog>
 
@@ -330,7 +330,7 @@
         </dialog>
 
         <dialog id="specialevent">
-            <iframe src="https://sjcathedral.org/special-event/" height = 640 width = 450 frameborder = 0 title="Funeral Website"></iframe>
+            <iframe src="https://sjcathedral.org/special-event/" height = 640 width = 450 frameborder = 0 title="Special Event Website"></iframe>
             <button type="reset" id="cancelspecialevent">Close</button> 
         </dialog>
 
@@ -347,6 +347,8 @@
                 dialog.close();   
            };
 
+
+
            document.getElementById("weddingwebsite").addEventListener("click",discreption3,false);
            function discreption3() {
                 dialog = document.getElementById("wedding");
@@ -357,6 +359,8 @@
                 dialog = document.getElementById("wedding");
                 dialog.close();   
            };
+
+
 
            document.getElementById("funeralwebsite").addEventListener("click",discreption5,false);
            function discreption5() {
@@ -369,13 +373,15 @@
                 dialog.close();   
            };
 
-           document.getElementById("specialeventwebsite").addEventListener("click",discreption5,false);
-           function discreption5() {
+           
+
+           document.getElementById("specialeventwebsite").addEventListener("click",discreption7,false);
+           function discreption7() {
                 dialog = document.getElementById("specialevent");
                 dialog.show();   
            };
-           document.getElementById("cancelspecialevent").addEventListener("click",discreption6,false);
-           function discreption6() {
+           document.getElementById("cancelspecialevent").addEventListener("click",discreption8,false);
+           function discreption8() {
                 dialog = document.getElementById("specialevent");
                 dialog.close();   
            };
