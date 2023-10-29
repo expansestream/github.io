@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width">
     <title>livestream instructions</title>
     <style>
       html {
@@ -35,7 +35,7 @@
     }
     iframe {
         display: block;
-        margin: 0 auto;;
+        margin: 0 auto;
     }
     button {
         display: block;
@@ -58,6 +58,21 @@
         button:active {
             background-color: limegreen;
          }
+    #problems {
+            border-style: double;
+            border-color: red;
+            background-color: #8AA5C1;
+            color: red;
+        }
+        #problems:hover { cursor: pointer;
+        background-color: lightgreen;
+        }
+       #problems:active {
+            background-color: limegreen;
+         }
+    #help {
+        background-color: #8AA5C1;
+    }
     </style>
 </head>
 
@@ -195,6 +210,11 @@
             <li>Open a new browser tab, and click on the <strong>SJC WP Admin</strong> bookmark.</li>
             <li>Login to the SJCathedral.org page using the provided credentials.</li>
             <li>In the upper left corner under Saint John's Cathedral, select <strong>Visit Site</strong>.</li>
+                <ul>
+                    <li>If streaming a wedding, type <em><strong>https://sjcathedral.org/wedding-service/</strong></em> into the address bar.</li>
+                    <li>If streaming a funeral, type <em><strong>https://sjcathedral.org/funeral-service/</strong></em> into the address bar.</li>
+                    <li>If streaming a special event, type <em><strong>https://sjcathedral.org/special-event/</strong></em> into the address bar.</li>
+                </ul>
             <li>On the next page, in the top menu bar, click <strong>Edit Page.</strong></li>
         </ul>
 
@@ -218,6 +238,7 @@
             <li>About 10 minutes before the service begins, begin the stream by clicking the <strong>Record</strong> button.</li>
             <li>In the <em>Output Settings</em> window, in the <strong>Destination</strong> dropdown, select <em>Record to Disk-MOV</em>.</li>
             <li>In the <em>File</em> field, click <em>Browse</em>, and select <strong>D:</strong>/ drive.</li>
+            <li>Click Save.</li>
             <li>Click OK.</li>
             <li>Click the Record button again at the top to begin recording.</li>
         </ul>
@@ -248,13 +269,6 @@
         <ul>
             <li>Set output to <strong><em><span style="color:dimgray">Smooth</span></em></strong> in the Wirecast window.</li>
             <li>Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.</li>
-            <li><strong>If</strong> no audio is being sent to the livestream:</li>
-                <ul>
-                    <li>Confirm with the sound engineer that the Stream volume is on.</li>
-                    <li>In Wirecast, go to Layer 5 and click the microphone icon <span style="line-height:1em"><img src="https://th.bing.com/th/id/OIP.25K4YxPNWuXX1FB-rPCjagDPEs?w=196&h=284&c=7&r=0&o=5&dpr=1.3&pid=1.7" height=15 width=15 alt="microphone icon"></span>.</li>
-                    <li>Green bars should appear in the Stream Preview window, going up and down.</li>
-                    <li>Switch the preview to Live Video.</li>
-                </ul>
         </ul>
 
         <br>
@@ -289,14 +303,8 @@
             <li>Close the Wirecast window by clicking <span id="rainbow-text">X</span> in the upper right-hand corner.</li>
             <li>Click Save or Don't Save (generally click Don't Save if new additions like thumbnails don't need to be saved). </li>
             <li>Close Wirecast. Vimeo will automatically end the broadcast.</li>
-            <li>Close Google Chrome, and shut down the computer:</li>
-                <ul>
-                    <li>Turn off the power from the center control panel:</li>
-                        <ul>
-                            <li>Push the middle button first.</li>
-                            <li>Push the top button second.</li>
-                        </ul>
-                </ul>
+            <li>While closing Vimeo, click <span id="rainbow-text">End Event</span> in the upper right-hand corner.</li>
+            <li>Close Google Chrome, and shut down the computer.</li>
             <li>You're done!</li>
         </ul>
            
@@ -313,6 +321,8 @@
         <button type="button" id="funeralwebsite">Funeral Website</button>
 
         <button type="button" id="specialeventwebsite">Special Event Website</button>
+
+        <button type="button" id="problems">Help Desk</button>
 
         <dialog id="site">
             <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
@@ -332,6 +342,33 @@
         <dialog id="specialevent">
             <iframe src="https://sjcathedral.org/special-event/" height = 640 width = 450 frameborder = 0 title="Special Event Website"></iframe>
             <button type="reset" id="cancelspecialevent">Close</button> 
+        </dialog>
+
+        <dialog id="help">
+
+            <h4>Powering Up - Powering Down</h4>
+            <ul>
+                <li>On the central console:</li>
+                    <ul>
+                        <li>Press the top power button.</li>
+                        <li>Press the lower power button.</li>
+                    </ul>
+                <li>On the left console:</li>
+                <ul>
+                    <li>Press the power button on the Wirecast Gear rack.</li>
+                </ul>
+            </ul>
+
+            <h4>No audio on livestream</h4>
+            <ul>
+                <li>Confirm with sound engineer that the Stream volume is on.</li>
+                <li>In Wirecast, go to Layer 5 and click the microphone icon <span style="line-height:1em"><img src="https://th.bing.com/th/id/OIP.25K4YxPNWuXX1FB-rPCjagDPEs?w=196&h=284&c=7&r=0&o=5&dpr=1.3&pid=1.7" height=15 width=15 alt="microphone icon"></span>.</li>
+                <li>Green bars should appear in the Stream Preview window, going up and down.</li>
+                <li>Switch the preview to Live Video.</li>
+            </ul>
+
+            <button type="reset" id="cancelhelp">Close</button> 
+            
         </dialog>
 
         <script>
@@ -386,8 +423,21 @@
                 dialog.close();   
            };
 
-        </script>
 
+
+           document.getElementById("problems").addEventListener("click",discreption9,false);
+           function discreption9() {
+                dialog = document.getElementById("help");
+                dialog.show();   
+           };
+           document.getElementById("cancelhelp").addEventListener("click",discreption10,false);
+           function discreption10() {
+                dialog = document.getElementById("help");
+                dialog.close();   
+           };
+
+        </script>
+    
     </div>
 
   </body>
