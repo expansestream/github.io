@@ -17,7 +17,20 @@
       .wrapper {
         max-width: 750px;
         margin: 2em auto;
-      }
+        }
+      #open {
+            .button {
+            font-size: small;
+            border: none;
+            background: none;
+            position: relative;
+            left: -10em;
+            }
+         }
+         dialog {
+            border-style: hidden;
+            background-color:lightgray;
+         }
       h4 {
         font-size: 1rem;
         margin: 0;
@@ -77,6 +90,27 @@
 </head>
 
 <body>
+
+    <header>
+        <div id="open">
+           <button class="button" id="design">about</button>
+        </div>
+        <dialog id="about">
+            <span style="text-align: left">
+                <p>
+                    This website was inspired by a desire to access the livestream setup on a mobile device. Enrique Cintr&#243;n&#8217;s 
+                    <span style="text-decoration: underline;">AV Tech Livestream Guide</span> <em>Last Updated on October 1, 2023</em>
+                    outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate.
+                    <br>
+                    <br>
+                    Please email John at <a href="mailto:jfarmsboulder@gmail.com">jfarmsboulder@gmail.com</a> for questions, comments or concerns.
+                </p>
+            </span>
+           <div id="open">
+              <button class="button" type="reset" id="cancelabout">Close</button>
+           </div>
+        </dialog>
+    </header>
 
     <div class="wrapper">
 
@@ -342,7 +376,7 @@
         <dialog id="specialevent">
             <iframe src="https://sjcathedral.org/special-event/" height = 640 width = 450 frameborder = 0 title="Special Event Website"></iframe>
             <button type="reset" id="cancelspecialevent">Close</button> 
-        </dialog>
+        </dialog>    
 
         <dialog id="help">
 
@@ -457,6 +491,19 @@
            document.getElementById("cancelhelp").addEventListener("click",discreption10,false);
            function discreption10() {
                 dialog = document.getElementById("help");
+                dialog.close();   
+           };
+
+
+           
+            document.getElementById("design").addEventListener("click",discreption11,false);
+           function discreption11() {
+                dialog = document.getElementById("about");
+                dialog.show();   
+           };
+           document.getElementById("cancelabout").addEventListener("click",discreption12,false);
+           function discreption12() {
+                dialog = document.getElementById("about");
                 dialog.close();   
            };
 
