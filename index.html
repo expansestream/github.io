@@ -2,29 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1"">
     <title>livestream instructions</title>
     <style>
       html {
         font-size: 1em;
       }
+      #container {
+            max-width: 30em;
+            margin: auto;
+        }
       body {
         font: 1em Helvetica, Arial, sans-serif;
         margin: 20px;
         padding: 0;
         background-color: lemonchiffon;
       }
-      .wrapper {
-        max-width: 750px;
-        margin: 2em auto;
-        }
+      .dropdown-content {
+        margin-top: 0em;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        border-style: outset;
+        border-color:lightgray
+    }
+    .show {
+    display: block;
+    }   
       #open {
         .button {
+            display: inline;
             font-size: small;
             border-style: solid;
             background-color: aquamarine;
-            position: relative;
-            left: -10em;
+            margin-left: 2em;
+            margin-top: .8em;;
         }
         .button:hover { cursor: pointer;
             background-color: lightgreen;
@@ -92,15 +105,42 @@
     #help {
         background-color: #8AA5C1;
     }
+    p {
+            position: relative;
+            box-sizing: border-box;
+            width: 22em;
+            height: -20em;
+            background-color: #8AA5C1;
+            padding: .5em 2em .5em 2em;
+            border-style: solid;
+            border-color: maroon;
+            margin: 1em auto;
+         }
+         header {
+          background-color: lightslategray;
+          height: 3em;
+         }
     </style>
 </head>
 
 <body>
 
-    <header>
+    <div id="container">
+
+        <header>
+
         <div id="open">
-           <button class="button" id="design">about</button>
-        </div>
+           <button class="button" id="design">About</button>
+           <button class="button" onclick="myFunction()">Help Desk</button>
+           <div class="dropdown-content" id="myDropdown">
+                <button type="button" style="font-size: smaller;" id="powerup">Powering Up</button>
+                <button type="button" style="font-size: smaller;" id="noaudio">No Audio</button>
+                <button type="button" style="font-size: smaller;" id="nocamera">No Cameras</button>
+                <button type="button" style="font-size: smaller;" id="copyclipid">Copying Clip-ID</button>
+            </div>
+
+        </header>
+
         <dialog id="about">
             <span style="text-align: left">
                 <p>
@@ -120,9 +160,80 @@
               <button class="button" type="reset" id="cancelabout">Close</button>
            </div>
         </dialog>
-    </header>
 
-    <div class="wrapper">
+
+        <dialog id="power">
+            <h4>Powering Up - Powering Down</h4>
+            <ul>
+                <li>On the central console:</li>
+                    <ul>
+                        <li>Press the top power button.</li>
+                        <li>Press the lower power button.</li>
+                    </ul>
+                <li>On the left console:</li>
+                <ul>
+                    <li>Press the power button on the Wirecast Gear rack.</li>
+                </ul>
+            </ul>
+            <div id="open">
+                <button class="button" type="reset" id="cancelpower">Close</button>
+            </div>
+        </dialog>
+
+
+        <dialog id="audio">
+            <h4>No audio on livestream</h4>
+            <ul>
+                <li>Confirm with sound engineer that the Stream volume is on.</li>
+                <li>In Wirecast, go to Layer 5 and click the microphone icon <span style="line-height:1em"><img src="https://th.bing.com/th/id/OIP.25K4YxPNWuXX1FB-rPCjagDPEs?w=196&h=284&c=7&r=0&o=5&dpr=1.3&pid=1.7" height=15 width=15 alt="microphone icon"></span>.</li>
+                <li>Green bars should appear in the Stream Preview window, going up and down.</li>
+                <li>Switch the preview to Live Video.</li>
+            </ul>
+            <div id="open">
+                <button class="button" type="reset" id="cancelaudio">Close</button>
+            </div>
+        </dialog>
+
+
+        <dialog id="camera">
+            <h4>Cameras Not Loading</h4>
+            <ul>
+                <li>Close and re-open Wirecast.</li>
+                <li>Turn the camera controller off and then on.</li>
+                <li>Press the <strong>System</strong> button on the camera controller.</li>
+                    <ul>
+                        <li>Turn the F1 knob until you see <em>ALL OFF</em>.</li>
+                        <li>Push the knob in.</li>
+                        <li>All cameras will power down.</li>
+                        <li>Turn the F1 knob until you see <em>ALL ON</em>.</li>
+                        <li>Push the knob in.</li>
+                    </ul>
+                <li>Cameras will reboot. It may take a few moments before the cameras load in Wirecast.</li>    
+            </ul>
+            <div id="open">
+                <button class="button" type="reset" id="cancelcamera">Close</button>
+            </div>
+        </dialog>
+
+
+        <dialog id="clip">
+        <h4>Problems Copying Clip-ID</h4>
+            <ul>
+                <li>Double click on string of numbers.</li>
+                <li>Copy everything that is highlighted.</li>
+                <li>Simultaneously, press the Microsoft key <span style="line-height:1em"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Quick-Link-Icon-80x80-Microsoft-365?wid=40&hei=40" height=15 width=15 alt = "Microsoft logo"></span> on the keyboard and the R key.</li>
+                <li>Type <em>notepad</em> into the dialog box.</li>
+                <li>Click OK.</li>
+                <li>Once the notepad app opens, paste the previously copied items.</li>
+                <li>In notepad, copy only the string of numbers.</li>
+                <li>Paste into <em>Video URL</em> described in <strong>Step 10</strong>.</li>  
+            </ul>
+            <div id="open">
+                <button class="button" type="reset" id="cancelclip">Close</button>
+            </div>
+        </dialog>
+
+
 
         <span style="text-align: center"><h3>Arrival & Wirecast Setup</h3></span>
 
@@ -366,7 +477,6 @@
 
         <button type="button" id="specialeventwebsite">Special Event Website</button>
 
-        <button type="button" id="problems">Help Desk</button>
 
         <dialog id="site">
             <iframe src="https://www.SJCathedral.org" height = 640 width = 450 frameborder = 0 title="Cathedral Website"></iframe>
@@ -388,70 +498,14 @@
             <button type="reset" id="cancelspecialevent">Close</button> 
         </dialog>    
 
-        <dialog id="help">
-
-            <h4>Powering Up - Powering Down</h4>
-            <ul>
-                <li>On the central console:</li>
-                    <ul>
-                        <li>Press the top power button.</li>
-                        <li>Press the lower power button.</li>
-                    </ul>
-                <li>On the left console:</li>
-                <ul>
-                    <li>Press the power button on the Wirecast Gear rack.</li>
-                </ul>
-            </ul>
-
-            <h4>No audio on livestream</h4>
-            <ul>
-                <li>Confirm with sound engineer that the Stream volume is on.</li>
-                <li>In Wirecast, go to Layer 5 and click the microphone icon <span style="line-height:1em"><img src="https://th.bing.com/th/id/OIP.25K4YxPNWuXX1FB-rPCjagDPEs?w=196&h=284&c=7&r=0&o=5&dpr=1.3&pid=1.7" height=15 width=15 alt="microphone icon"></span>.</li>
-                <li>Green bars should appear in the Stream Preview window, going up and down.</li>
-                <li>Switch the preview to Live Video.</li>
-            </ul>
-
-            <h4>Cameras Not Loading</h4>
-            <ul>
-                <li>Close and re-open Wirecast.</li>
-                <li>Turn the camera controller off and then on.</li>
-                <li>Press the <strong>System</strong> button on the camera controller.</li>
-                    <ul>
-                        <li>Turn the F1 knob until you see <em>ALL OFF</em>.</li>
-                        <li>Push the knob in.</li>
-                        <li>All cameras will power down.</li>
-                        <li>Turn the F1 knob until you see <em>ALL ON</em>.</li>
-                        <li>Push the knob in.</li>
-                    </ul>
-                <li>Cameras will reboot. It may take a few moments before the cameras load in Wirecast.</li>    
-            </ul>
-
-            <h4>Problems Copying Clip-ID</h4>
-            <ul>
-                <li>Double click on string of numbers.</li>
-                <li>Copy everything that is highlighted.</li>
-                <li>Simultaneously, press the Microsoft key <span style="line-height:1em"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Quick-Link-Icon-80x80-Microsoft-365?wid=40&hei=40" height=15 width=15 alt = "Microsoft logo"></span> on the keyboard and the R key.</li>
-                <li>Type <em>notepad</em> into the dialog box.</li>
-                <li>Click OK.</li>
-                <li>Once the notepad app opens, paste the previously copied items.</li>
-                <li>In notepad, copy only the string of numbers.</li>
-                <li>Paste into <em>Video URL</em> described in <strong>Step 10</strong>.</li>  
-            </ul>
-
-            <h4>Creating an Overlay</h4>
-            <ul>
-                <li>Open Wirecast and select the shot layer where you want to add the overlay.</li>
-                <li>Click on the “Add Layer” button and select “Text” or “Image” from the dropdown menu.</li>
-                <li>If you selected “Text”, enter the text you want to display in the overlay. You can customize the font, size, color, and other properties of the text using the options in the “Text Properties” panel.</li>
-                <li>If you selected “Image”, click on the “Browse” button and select the image file you want to use as an overlay. You can adjust the size, position, and other properties of the image using the options in the “Image Properties” panel.</li>
-                <li>Once you have added your text or image overlay, you can adjust its position, size, opacity, and other properties by clicking on it and using the options in the “Layer Properties” panel.</li>
-            </ul>
-
-            <button type="reset" id="cancelhelp">Close</button> 
-            
-        </dialog>
-
+        
         <script>
+
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
             
             document.getElementById("cathedralwebsite").addEventListener("click",discreption1,false);
            function discreption1() {
@@ -505,33 +559,70 @@
 
 
 
-           document.getElementById("problems").addEventListener("click",discreption9,false);
+           document.getElementById("design").addEventListener("click",discreption9,false);
            function discreption9() {
-                dialog = document.getElementById("help");
+                dialog = document.getElementById("about");
                 dialog.show();   
            };
-           document.getElementById("cancelhelp").addEventListener("click",discreption10,false);
+           document.getElementById("cancelabout").addEventListener("click",discreption10,false);
            function discreption10() {
-                dialog = document.getElementById("help");
+                dialog = document.getElementById("about");
                 dialog.close();   
            };
 
 
-           
-            document.getElementById("design").addEventListener("click",discreption11,false);
+           document.getElementById("powerup").addEventListener("click",discreption11,false);
            function discreption11() {
-                dialog = document.getElementById("about");
+                dialog = document.getElementById("power");
                 dialog.show();   
            };
-           document.getElementById("cancelabout").addEventListener("click",discreption12,false);
+           document.getElementById("cancelpower").addEventListener("click",discreption12,false);
            function discreption12() {
-                dialog = document.getElementById("about");
+                dialog = document.getElementById("power");
+                dialog.close();   
+           };
+
+
+           document.getElementById("noaudio").addEventListener("click",discreption13,false);
+           function discreption13() {
+                dialog = document.getElementById("audio");
+                dialog.show();   
+           };
+           document.getElementById("cancelaudio").addEventListener("click",discreption14,false);
+           function discreption14() {
+                dialog = document.getElementById("audio");
+                dialog.close();   
+           };
+
+
+           document.getElementById("nocamera").addEventListener("click",discreption15,false);
+           function discreption15() {
+                dialog = document.getElementById("camera");
+                dialog.show();   
+           };
+           document.getElementById("cancelcamera").addEventListener("click",discreption16,false);
+           function discreption16() {
+                dialog = document.getElementById("camera");
+                dialog.close();   
+           };
+
+
+           document.getElementById("copyclipid").addEventListener("click",discreption17,false);
+           function discreption17() {
+                dialog = document.getElementById("clip");
+                dialog.show();   
+           };
+           document.getElementById("cancelclip").addEventListener("click",discreption18,false);
+           function discreption18() {
+                dialog = document.getElementById("clip");
                 dialog.close();   
            };
 
         </script>
     
     </div>
+
+
 
   </body>
   
