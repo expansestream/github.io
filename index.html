@@ -137,6 +137,7 @@
                 <button type="button" style="font-size: smaller;" id="noaudio">No Audio</button>
                 <button type="button" style="font-size: smaller;" id="nocamera">No Cameras</button>
                 <button type="button" style="font-size: smaller;" id="copyclipid">Copying Clip-ID</button>
+                <button type="button" style="font-size: smaller;" id="dagwellsound">Dagwell Soundboard</button>
             </div>
 
         </header>
@@ -232,6 +233,22 @@
                 <button class="button" type="reset" id="cancelclip">Close</button>
             </div>
         </dialog>
+
+
+        <dialog id="dagwellsoundboard">
+            <h4>Power to Dagwell Soundboard</h4>
+                <ul>
+                    <li>Proceed to the back of the sound board.</li>  
+                    <li>Find the power cord.</li>
+                    <li>Locate power switch above power cord.</li>
+                        <ul>
+                            <li>Toggle switch to turn power on/off.</li>
+                        </ul>
+                </ul>
+                <div id="open">
+                    <button class="button" type="reset" id="canceldagwellsoundboard">Close</button>
+                </div>
+            </dialog>
 
 
 
@@ -615,6 +632,18 @@
            document.getElementById("cancelclip").addEventListener("click",discreption18,false);
            function discreption18() {
                 dialog = document.getElementById("clip");
+                dialog.close();   
+           };
+
+
+           document.getElementById("dagwellsound").addEventListener("click",discreption19,false);
+           function discreption19() {
+                dialog = document.getElementById("dagwellsoundboard");
+                dialog.show();   
+           };
+           document.getElementById("canceldagwellsoundboard").addEventListener("click",discreption20,false);
+           function discreption20() {
+                dialog = document.getElementById("dagwellsoundboard");
                 dialog.close();   
            };
 
