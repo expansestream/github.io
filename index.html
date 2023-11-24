@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>livestream instructions</title>
     <style>
       html {
@@ -120,10 +120,16 @@
           background-color: lightslategray;
           height: 3em;
          }
+         /*span {
+            display: flex;
+         }*/
     </style>
 </head>
 
 <body>
+
+    
+
 
     <div id="container">
 
@@ -139,13 +145,30 @@
                 <button type="button" style="font-size: smaller;" id="copyclipid">Copying Clip-ID</button>
                 <button type="button" style="font-size: smaller;" id="dagwellsound">Dagwell Soundboard</button>
             </div>
+            <!---<button class="button" onclick="yourFunction()">Read Aloud</button>
+           <div class="dropdown-content" id="yourDropdown">
+                <button type="button" style="font-size: smaller;" id="info">About</button>
+                <button type="button" style="font-size: smaller;" id="arrival">Wirecast Setup</button>
+                <button type="button" style="font-size: smaller;" id="update">Document</button>
+                <button type="button" style="font-size: smaller;" id="setting">Cameras</button>
+                <button type="button" style="font-size: smaller;" id="connecting">Vimeo</button>
+                <button type="button" style="font-size: smaller;" id="stjohns">Homepage</button>
+                <button type="button" style="font-size: smaller;" id="starting">Stream</button>
+                <button type="button" style="font-size: smaller;" id="screen">Presentation</button>
+                <button type="button" style="font-size: smaller;" id="ending">End</button>
+            </div>--->
 
         </header>
+
+        
+
+        
+            <!---<a href="#"onclick="window.location.reload(true);return false">Close</a>--->
 
         <dialog id="about">
             <span style="text-align: left">
                 <p>
-                    This website was inspired by a desire to access the livestream setup on a mobile device. Enrique Cintr&#243;n&#8217;s 
+                    This website was inspired by a desire to access the livestream setup on a mobile device. Enrique&#8217;s 
                     <span style="text-decoration: underline;">AV Tech Livestream Guide</span> <em>Last Updated on October 1, 2023</em>
                     outlines the procedures shown throughout the site. 
                     <br>
@@ -158,9 +181,23 @@
                 </p>
             </span>
            <div id="open">
-              <button class="button" type="reset" id="cancelabout">Close</button>
+              <button class="button" type="reset" id="cancelabout">Close</button><button class="button" style="font-size:x-small;" id="who">Read Aloud</button>
            </div>
         </dialog>
+
+        <script>
+            document.getElementById("who").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("This website was inspired by a desire to access the live stream setup on a mobile device. Enrique's AV Tech Live stream Guide, Last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
 
 
         <dialog id="power">
@@ -252,7 +289,7 @@
 
 
 
-        <span style="text-align: center"><h3>Arrival & Wirecast Setup</h3></span>
+        <span style="text-align: center"><h3>Arrival & Wirecast Setup</h3><button class="button" style="font-size:x-small;" id="arrive">Read Aloud</button></span>
 
         <h4>Step 1</h4>
 
@@ -272,7 +309,23 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Updating the Service Document</h3></span>
+
+        <script>
+            document.getElementById("arrive").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Arrival & Wire cast Setup. Step 1. If the computer is not on, boot it up. Log in using the pin: 1, 3, 5, 0, 1, 3, Open Wirecast. Go to File, Open Recent. Click the appropriate service document: 10:30 a m service: /Choral Eucharist.wcst. Wilderness: /The Wilderness_, backup.wcst. Dean's Forum: /Dean's Forum.wcst. Weddings, funerals, special services: /Choral Eucharist.wcst");
+                var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+        <span style="text-align: center"><h3>Updating the Service Document</h3><button class="button" style="font-size:x-small;" id="doc">Read Aloud</button></span>
         
         <h4>Step 2</h4>
         
@@ -288,7 +341,6 @@
 
         <ul>
             <li>In the title overlay, click the large plus sign <strong>(+)</strong>.</li>
-            <li>Click the large plus sign <strong>(+)</strong>.</li>
             <li>In the window that opens, go to <em>Media Files</em> > <em>Browse Disk</em>.</li>
             <LI>Open the <strong>Pictures</strong> <em>folder</em> (if not found, open the <strong>Downloads</strong> <em>folder</em>).</LI>
             <li>The thumbnails are arranged by month, and then by platform.</li>
@@ -303,7 +355,23 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Setting Up the Cameras</h3></span>
+        <script>
+            document.getElementById("doc").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Updating the Service Document. Step 2. Click on the title overlay in the first layer labeled Sermon. Click Preacher. Click on the Layer Settings button (the 3 dots in the upper right-hand corner). In the Text field, update preacher as their name appears in the service leaflet. Adjust text field if necessary. Step 3. In the title overlay, click the large plus sign. In the window that opens, go to Media Files, Browse Disk. Open the Pictures folder (If not found, open the Downloads folder). The thumbnails are arranged by month, and then by platform. Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo. Open the Wire cast folder. Select the file for today's service: Choral Eucharist: CE_[date]. Wilderness: WI_[date]. Dean's Forum: See thumbnails. Special Services: See thumbnails.");
+                var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+
+        <span style="text-align: center"><h3>Setting Up the Cameras</h3><button class="button" style="font-size:x-small;" id="cam">Read Aloud</button></span>
 
         <h4>Step 4</h4>
 
@@ -315,7 +383,24 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Connecting to Vimeo</h3></span>
+
+        <script>
+            document.getElementById("cam").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Setting Up the Cameras. Step 4. Turn on the camera controller by pressing the switch located in its back left corner. The camera signals will load in Wirecast once the controller boots up. Press the P, M, E, M, /, T, M, E, M, button to load the camera presets.");
+                var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+
+        <span style="text-align: center"><h3>Connecting to Vimeo</h3><button class="button" style="font-size:x-small;" id="vim">Read Aloud</button></span>
 
         <h4>Step 5</h4>
 
@@ -344,7 +429,7 @@
                 <ul>
                     <li> Choral Eucharist: <em>T_CE_[date]</em></li>
                     <li> Wilderness: <em>T_WI_[date]</em>]</li>
-                    <li>Dean's Forun: <em>See correct thumbnail.</em></li>
+                    <li>Dean's Forum: <em>See correct thumbnail.</em></li>
                     <li>Special Services: <em>See correct thumbnail.</em></li>
                 </ul>
             <li>Save, and the preview changes with the updated thumbnail.</li>
@@ -373,7 +458,25 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Updating the Saint John's Homepage</h3></span>
+
+
+        <script>
+            document.getElementById("vim").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Connecting to Vimeo. Step 5. Open Google Chrome. Click Vimeo in the Bookmarks bar. Click the large blue button, New Video. Select Create Event. On the next screen, click Live Broad cast. Click the pencil icon at the top. In the text box that appears, type the name of the service: For the 10:30 service: Choral Eucharist, Rite II, [date of service]. For the Wilderness: <em>The Wilderness, [date of service]. For the Dean's Forum: <em>Dean's Forum with [Guest Name], [date]. For other services: Name of Service, [date of service]. Step 6. Beneath the video preview, click the button labeled Choose thumbnail. Open the Pictures folder (if not found, open the Downloads folder. As before, open the current month's folder, and select the appropriate thumbnail: Choral Eucharist: T_CE_[date], Wilderness: T_WI_[date], Dean's Forum: See correct thumbnail, Special Services: See correct thumbnail. Save, and the preview changes with the updated thumbnail. Set Viewing privacy to Public. Step 7. Click the Destinations tab. Connect to Facebook and YouTube. Select the Saint John's Cathedral account for both, and switch both on with the toggle button. Step 8. Select the Event tab. Enter the Start date, and Time, of the stream at the bottom. Copy the link provided. Paste and open in a new tab. Press the D key on the keyboard. In the upper left-hand corner, copy the numeric Clip ID. Keep this tab open in case the Clip ID needs to be copied again.");
+                var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+
+        <span style="text-align: center"><h3>Updating the Saint John's Homepage</h3><button class="button" style="font-size:x-small;" id="upd">Read Aloud</button></span>
 
         <h4>Step 9</h4>
 
@@ -401,7 +504,23 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Starting the Stream</h3></span>
+
+        <script>
+            document.getElementById("upd").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Updating the Saint John's Homepage. Step 9. Special Services have their own homepage and not the SJC homepage. Open a new browser tab, and click on the SJC WP Admin bookmark. Login to the SJCathedral.org page using the provided credentials. In the upper left corner under Saint John's Cathedral, select Visit Site. If streaming a wedding, type https://sjcathedral.org/wedding-service slash, into the address bar, and enter. If streaming a funeral, type https://sjcathedral.org/funeral-service slash, into the address bar, and enter. If streaming a special event, type https://sjcathedral.org/special-event slash, into the address bar, and enter. On the next page, in the top menu bar, click Edit Page. Step 10. In the editing page that loads, scroll down to the section labeled Intro Settings. In the box labeled Video URL, highlight the string of numbers at the end and paste the Clip ID copied previously. Click the blue Update button to save changes. Return to the homepage using the Visit Site button to assure that the homepage has been updated.");
+                var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+        <span style="text-align: center"><h3>Starting the Stream</h3><button class="button" style="font-size:x-small;" id="str">Read Aloud</button></span>
 
 
         <h4>Step 11</h4>
@@ -429,7 +548,9 @@
             <li>Go back to <em>Vimeo</em>, click on the blue button <strong><span style="color:blue">Manage production</span></strong>.</li>
             <li>Select <em>Stream with encoder</em>.</li>
             <li>Copy the link labeled <em>RTMPS URL</em> and paste it into the <em>Address</em> section in the Output Settings window in Wirecast.</li>
-            <li>Copy the <em>Stream Key</em> from Vimeo and paste it into the <em>Stream</em> field in Wirecast.</li>
+            <li>Copy the <em>Stream Key</em> from Vimeo.</li>
+            <li>Go to the Destination dropdown.</li>
+            <li>Paste the stream key into the stream field in Wirecast.</li>
             <li>Click OK.</li>
             <li>Click Stream again at the top.</li>
             <li>The Stream button will flash green before coming solid.</li>
@@ -445,7 +566,23 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Streaming Dean's Forum Screen Presentation</h3></span>
+
+        <script>
+            document.getElementById("str").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Starting the Stream. Step 11. About 10 minutes before the service begins, begin the stream by clicking the Re cord button. In the Output Settings window, in the Destination dropdown, select Re cord to Disk-MOV. In the File field, click Browse, and select D:/ drive. Click Save. Click OK. Click the Re cord button again at the top to begin re cording.  Step 12. Click the Stream button at the top. In the window that appears, go to the Destination dropdown and select RTMP server. Leave this window open. Step 13. Go back to Vimeo, click on the blue button Manage production. Select Stream with encoder. Copy the link labeled RTMPS URL and paste it into the Address section in the Output Settings window in Wirecast. Copy the Stream Key from Vimeo. Go to the Destination dropdown. Paste the stream key into the stream field in Wirecast. Click OK. Click Stream again at the top. The Stream button will flash green before coming solid. The stream is now live! Step 14. Set output to Smooth in the Wirecast window. Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.");
+               var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+        <span style="text-align: center"><h3>Streaming Dean's Forum Screen Presentation</h3><button class="button" style="font-size:x-small;" id="pres">Read Aloud</button></span>
 
         <h4>Step 15</h4>
 
@@ -466,7 +603,23 @@
 
         <br>
 
-        <span style="text-align: center"><h3>Ending the Stream</h3></span>
+
+        <script>
+            document.getElementById("pres").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Streaming Dean's Forum Screen Presentation. Step 15. On the Dagwell computer, open Novocast. Select Dagwell Projector. This will project the presentation onto the screen in house. The presentation is streamed via screen capture. In Wirecast, click the Screen Capture function in Layer 2. This will record whatever is showing on the main (left) monitor. Be sure to have the presentation open on the left screen! The picture in picture option in Layer 3 is activated by clicking one of the two video options in Layer 2.")
+               var msg = new SpeechSynthesisUtterance(text);
+                  console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
+        <span style="text-align: center"><h3>Ending the Stream</h3><button class="button" style="font-size:x-small;" id="endst">Read Aloud</button></span>
 
         <h4>Step 16</h4>
 
@@ -485,6 +638,23 @@
             </div>
             
         <br>
+
+
+        <script>
+            document.getElementById("endst").addEventListener("click", readText, false);
+               function readText() {
+               var text = ("Ending the Stream. Step 16. Once the service is over, end the broadcast by clicking the Stream and Re cord buttons in Wirecast. Close the Wirecast window by clicking the red X in the upper right-hand corner. Click Save or Don't Save. Generally click Don't Save if new additions like thumbnails don't need to be saved. Close Wirecast. Vimeo will automatically end the broadcast. While closing Vimeo, click the red End Event in the upper right hand corner. Close Google Chrome, and shut down the computer. You're done!");
+               var msg = new SpeechSynthesisUtterance(text);
+               console.log (msg);
+                window.speechSynthesis.speak(msg);
+                /*show = document.createElement("p");
+                //showText = document.createTextNode("This website was inspired by a desire to access the livestream setup on a mobile device. Enrique's AV Tech Livestream Guide last Updated on October 1, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+                show.appendChild(showText);
+                document.body.appendChild(show);*/
+               }
+        </script>
+
+
 
         <button type="button" id="cathedralwebsite">Cathedral Website</button>
 
@@ -518,12 +688,9 @@
         
         <script>
 
-        function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        }
+        
 
-
-            
+       
             document.getElementById("cathedralwebsite").addEventListener("click",discreption1,false);
            function discreption1() {
                 dialog = document.getElementById("site");
@@ -574,6 +741,14 @@
                 dialog.close();   
            };
 
+
+
+           function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            
 
 
            document.getElementById("design").addEventListener("click",discreption9,false);
@@ -647,7 +822,16 @@
                 dialog.close();   
            };
 
-        </script>
+
+
+           /*function yourFunction() {
+            document.getElementById("yourDropdown").classList.toggle("show");
+            }*/
+
+
+            </script>
+
+           
     
     </div>
 
