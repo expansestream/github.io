@@ -451,7 +451,7 @@
 
 
 
-        <span style="text-align: center"><h3>Updating the Saint John's Homepage</h3><button class="button" style="font-size:x-small;" id="upd">Read Aloud</button></span>
+        <span style="text-align: center"><h3>Updating the Saint John&#8217;s Homepage</h3><button class="button" style="font-size:x-small;" id="upd">Read Aloud</button></span>
 
         <h4>Step 8</h4>
 
@@ -509,7 +509,7 @@
         <ul>
             <li>Click the <strong>Stream</strong> button at the top.</li>
             <li>In the window that appears, go to the <strong>Destination</strong> dropdown <span style="color: red">again</span> and select <em>RTMP server</em>.</li>
-            <li>Go back to <em>Vimeo</em>, click on the <strong>stream</strong> button in the far left-hand corner.</li>
+            <li><span style="color: red">Go back to <em>Vimeo</em></span>, click on the <strong>stream</strong> button in the upper left-hand corner.</li>
             <li>Copy the link labeled <em>RTMPS URL</em> and paste it into the <em>Address</em> section in the Output Settings window in Wirecast.</li>
             <li>Copy the <em>Stream Key</em> from Vimeo.</li>
             <li>Paste the stream key into the stream field in Wirecast.</li>
@@ -532,7 +532,7 @@
         <script>
             document.getElementById("str").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Starting the Stream. Step 10. About 10 minutes before the service begins, begin the stream by clicking the Re cord button. In the Output Settings window, in the Destination dropdown, select Re cord to Disk dash M O V. In the File field, click Browse, and select D colon slash drive. Click Save. Click OK. Click the Re cord button again at the top to begin re cording.  Step 11. Click the Stream button at the top. In the window that appears, go to the Destination drop down, again, and select RTMP server. Go back to Vimeo, click on the stream button in the far left hand corner. Copy the link labeled RTMPS URL and paste it into the Address section in the Output Settings window in Wirecast. Copy the Stream Key from Vimeo. Paste the Stream Key into the Stream field in Wirecast. Click OK. Click Stream again at the top. The Stream button will flash green before coming solid. The stream is now live! Step 12. Set output to Smooth in the Wirecast window. Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.");
+               var text = ("Starting the Stream. Step 10. About 10 minutes before the service begins, begin the stream by clicking the Re cord button. In the Output Settings window, in the Destination dropdown, select Re cord to Disk dash M O V. In the File field, click Browse, and select D colon slash drive. Click Save. Click OK. Click the Re cord button again at the top to begin re cording.  Step 11. Click the Stream button at the top. In the window that appears, go to the Destination drop down, again, and select RTMP server. Go back to Vimeo, click on the stream button in the upper left hand corner. Copy the link labeled RTMPS URL and paste it into the Address section in the Output Settings window in Wirecast. Copy the Stream Key from Vimeo. Paste the Stream Key into the Stream field in Wirecast. Click OK. Click Stream again at the top. The Stream button will flash green before coming solid. The stream is now live! Step 12. Set output to Smooth in the Wirecast window. Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.");
                var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
