@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dec 10, 2023 livestream instructions</title>
+    <title>November 22, 2024 Livestream Instructions</title>
     <style>
       html {
         font-size: 1em;
@@ -22,7 +22,7 @@
         margin-top: 0em;
         display: none;
         position: absolute;
-        background-color: #8AA5C1;
+        background-color: #8aa5c1;
         min-width: 160px;
         border-width: .25em;
         border-style: outset;
@@ -158,7 +158,7 @@
             <span style="text-align: left">
                 <p>
                     This website was inspired by a desire to access the livestream setup on a mobile device. Enrique&#8217;s 
-                    <span style="text-decoration: underline;">AV Tech Livestream Guide</span> <em>Last Updated on December 10, 2023</em>
+                    <span style="text-decoration: underline;">AV Tech Livestream Guide</span> <em>Last Updated on November 22, 2024</em>
                     outlines the procedures shown throughout the site. 
                     <br>
                     Personal notes from the author have been added where appropriate.
@@ -177,7 +177,7 @@
         <script>
             document.getElementById("who").addEventListener("click", readText, false);
                function readText() {
-               var text = ("This website was inspired by a desire to access the live stream setup on a mobile device. Enrique's AV Tech, life stream Guide, Last Updated on December 10, 2023, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
+               var text = ("This website was inspired by a desire to access the live stream setup on a mobile device. Enrique's AV Tech, life stream Guide, Last Updated on November 22, 2024, outlines the procedures shown throughout the site. Personal notes from the author have been added where appropriate. Please email John at jfarmsboulder@gmail.com for questions, comments or concerns. Blessings!");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
@@ -220,17 +220,22 @@
         <dialog id="camera">
             <h4>Cameras Not Loading</h4>
             <ul>
-                <li>Close and re-open Wirecast.</li>
+                <li>If any of the cameras do not display, all of the cameras need to be restarted at once.</li>
                 <li>Turn the camera controller off and then on.</li>
                 <li>Press the <strong>System</strong> button on the camera controller.</li>
                     <ul>
-                        <li>Turn the F1 knob until you see <em>ALL OFF</em>.</li>
+                        <li> Under the <em>Power</em> heading, turn the <em>F1</em> knob until you see <em>ALL OFF</em> is displayed.</li>
                         <li>Push the knob in.</li>
-                        <li>All cameras will power down.</li>
-                        <li>Turn the F1 knob until you see <em>ALL ON</em>.</li>
-                        <li>Push the knob in.</li>
+                        <li>All cameras will turn off and Wirecast will display blank feeds in the camera layer.</li>
+                        <li>The controller will then display <em>ALL ON</em>.</li>
+                        <li>Press the <em>F1</em> knob again.</li>
+                        <li>Repeat the process until all cameras are operational.</li>
                     </ul>
-                <li>Cameras will reboot. It may take a few moments before the cameras load in Wirecast.</li>    
+                <li>Cameras will reboot. It may take a few moments before the cameras load in Wirecast.</li>
+                <li>If any camera is showing a blury image, try toggling between presets.</li> 
+                    <ul>
+                        <li>Also, try manually adjusting the focus using the large focus knob to the left of the control stick.</li>
+                    </ul>
             </ul>
             <div id="open">
                 <button class="button" type="reset" id="cancelcamera">Close</button>
@@ -241,15 +246,14 @@
         <dialog id="clip">
         <h4>Problems Copying Clip-ID</h4>
             <ul>
-                <li>Double click the string of numbers.</li>
+                <li>Double click on string of numbers.</li>
                 <li>Copy everything that is highlighted.</li>
                 <li>Press the Microsoft key <span style="line-height:1em"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Quick-Link-Icon-80x80-Microsoft-365?wid=40&hei=40" height=15 width=15 alt = "Microsoft logo"></span> on the keyboard and then the R (run) key.</li>
                 <li>Type <em>notepad</em> into the dialog box.</li>
                 <li>Click OK.</li>
                 <li>Once the notepad app opens, paste the previously copied items.</li>
-                <li><em><span style="color:red">If the items pasted into notepad do not match the items copied from the Clip-ID, repeat the proceass.</span></em></li>
                 <li>In notepad, copy only the string of numbers.</li>
-                <li>Paste into <em>Video URL</em> described in <strong>Step 9</strong>.</li>  
+                <li>Paste into <em>Video URL</em> described in <strong>Step 10</strong>.</li>  
             </ul>
             <div id="open">
                 <button class="button" type="reset" id="cancelclip">Close</button>
@@ -279,7 +283,7 @@
         <h4>Step 1</h4>
 
         <ul>
-            <li>If the computer is not on, boot it up.</li>
+            <li>If the computer is not on, boot it up <img src="https://media.gettyimages.com/id/2089779911/vector/media-thin-line-icon-editable-stroke.jpg?s=612x612&w=0&k=20&c=DUso9v2g9G157UdSj4SOPg6RDOOnX5_rTeDEB684xLc=" height="18" width="18" alt="Power button">!</li>
             <li>Log in using the pin: <strong>135013</strong>.</li>
             <li>Open <em>Wirecast.</em></li>
             <li>Go to <em>File</em> > <em>Open Recent</em>.</li>
@@ -288,7 +292,7 @@
                     <li>10:30 am service: <em>/Choral Eucharist.wcst</em></li>
                     <li>Wilderness: <em>/The Wilderness_backup.wcst</em></li>
                     <li>Dean's Forum: <em>/Dean's Forum.wcst</em></li>
-                    <li><strong>Weddings, funerals, special services: <em>/Choral Eucharist.wcst</em></strong></li>
+                    <li>Weddings, funerals, special services: <em>/Choral Eucharist.wcst</em></li>
                 </ul>
         </ul>
 
@@ -329,8 +333,8 @@
             <li>Select the file for today's service:</li>
                 <li>Choral Eucharist: <strong>CE_[date]</strong></li>
                 <li>Wilderness: <strong>WI_[date]</strong></li>
-                <li>Dean's Forum: See thumbnails</li>
-                <li>Special Services: See thumbnails</li> 
+                <li>Dean's Forum: Thumbnails in the Pictures folder.</li>
+                <li>Special Services: Have their own thumbnails.</li> 
         </ul>
 
         <br>
@@ -338,7 +342,7 @@
         <script>
             document.getElementById("doc").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Updating the Service Document. Step 2. Click on the title overlay in the first layer labeled Sermon. Click Preacher. Click on the Layer Settings button (the 3 dots in the upper right-hand corner). In the Text field, update preacher as their name appears in the service leaflet. Adjust text field if necessary. Step 3. In the title overlay, click the large plus sign. In the window that opens, go to Media Files, Browse Disk. Open the Pictures folder (If not found, open the Downloads folder). The thumbnails are arranged by month, and then by platform. Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo. Open the Wire cast folder. Select the file for today's service: Choral Eucharist: CE underscore, open bracket, date, close bracket. Wilderness: WI underscore, open bracket, date, close bracket. Dean's Forum: See thumbnails. Special Services: See thumbnails.");
+               var text = ("Updating the Service Document. Step 2. Click on the title overlay in the first layer labeled Sermon. Click Preacher. Click on the Layer Settings button (the 3 dots in the upper right-hand corner). In the Text field, update preacher as their name appears in the service leaflet. Adjust text field if necessary. Step 3. In the title overlay, click the large plus sign. In the window that opens, go to Media Files, Browse Disk. Open the Pictures folder (If not found, open the Downloads folder). The thumbnails are arranged by month, and then by platform. Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo. Open the Wire cast folder. Select the file for today's service: Choral Eucharist: CE underscore, open bracket, date, close bracket. Wilderness: WI underscore, open bracket, date, close bracket. Dean's Forum: Thumbnails in the Pictures folder. Special Services: Have their own thumbnails.");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
@@ -377,73 +381,81 @@
         <ul>
             <li>Open Google Chrome.</li>
             <li>Click <strong>Vimeo</strong> in the Bookmarks bar.</li>
-            <li>Click the large blue button <strong><span style="color:blue">Create</span></strong>.</li>
-            <li>Select <em>Host Event</em>.</li>
-            <li>In the dialogue box that appears, click <strong>Choose Event Type</strong>.</li>
-            <li>On the next slide, confirm that <strong>Live event broadcast</strong> is selected, and click <strong>Next</strong>.</li>
-            <li>In the next dialogue box, complete the <strong>Title</strong> field as follows:</li>
+            <li>Click the large blue button <strong><span style="color:blue">New</span></strong>.</li>
+            <li>Select <em>Host Event</em> from the dropdown menu.</li>
+            <li>In the dialogue box that appears, click <strong>Choose event type</strong>.</li>
+            <li>In the dialog box that appears, confirm that <strong>Live broadcast</strong> and <strong>Stream with RTMP</strong> are selected.</li>
+            <li>Click <strong>Next</strong>.</li>
+            <li>In the dialogue box that appears, complete the <strong>Title</strong> field as follows:</li>
             <ul>
-                <li>In the text box that appears, type the name of the service:</li>
-                    <ul>
-                        <li>For the 10:30 am service: <em>Choral Eucharist, Rite II, [date of service]</em></li>
-                        <li>For the Wilderness: <em>The Wilderness, [date of service]</em></li>
-                        <li>For the Dean's Forum: <em>Dean's Forum with [Guest Name], [date]</em></li>
-                        <li>For other services: <em>Name of Service, [date of service]</em></li>
-                    </ul>
-                <ul>
-                        <li>In the Start and End fields, enter the date, plus the start and end times of the service.</li>
-                        <li>Verify that Link privacy is set to <strong>Public</strong>.</li>
-                        <li> Click <strong>Create</strong>.</li>
-                </ul>
+                <li>For the 10:30 am service: <em>Choral Eucharist, Rite II, [date of service]</em></li>
+                <li>For the Wilderness: <em>The Wilderness, [date of service]</em></li>
+                <li>For the Dean's Forum: <em>Dean's Forum with [Guest Name], [date]</em></li>
+                <li>For other services: <em>Name of Service, [date of service]</em></li>
             </ul>
-                <li>A new page will appear.</li>
-                <ul>
-                    <li>Click <strong>Player</strong> and then <strong>Customize player</strong>.</li>
-                    <li>Scroll down list of options to <strong>Thumbnail</strong>.</li>
-                    <li>Click the <strong>Pencil</strong> icon <img src="https://purepng.com/public/uploads/large/purepng.com-pencilpencilnarrowsolid-pigment-corecharcoal-pencilsgreyblack-1421526585181iwtwg.png" height="15" width="10" alt="Pencil image">.</li>
-                    <li>Click on the <em>Manage settings</em> bubble that appears.</li>
-                    <li>In the new box that opens, click <strong>Upload</strong>.</li>
-                    <li>Open the <strong>Pictures</strong> <em>folder</em> (if not found, open the <strong>Downloads</strong> <em>folder</em>).</li>
-                    <li>As before, open the current month's folder, and select the appropriate thumbnail:</li>
-                        <ul>
-                            <li> Choral Eucharist: <em>T_CE_[date]</em></li>
-                            <li> Wilderness: <em>T_WI_[date]</em></li>
-                            <li>Dean's Forum: <em>See correct thumbnail.</em></li>
-                            <li>Special Services: <em>See correct thumbnail.</em></li>
-                        </ul>
-                </ul>
+            <li>Complete the <strong>Start</strong> and <strong>End</strong> fields.</li>
+            <ul>
+                <li>Enter the date as well as the start and end times of the service.</li>
+                <li><em>Do Not Skip This Step!</em> It creates a countdown to let viewers know when the service starts.</li>
+            </ul>
+            <li>Verify that Link privacy is set to <strong>Public</strong>.</li>
+            <li>Click <strong>Create</strong>.</li>
+            <li></li>
+            
+            <li>In the text box that appears, type the name of the service:</li>
+                
         </ul>
 
         <h4>Step 6</h4>
 
         <ul>
-            <li>Go back to the original <strong>Vimeo</strong> tab.</li>
-            <li>Click the <strong>Settings</strong> button.</li>
-            <li>Select <strong>Destinations</strong> from the drop-down menu.</li>
-            <li>Connect to Facebook and YouTube:</li>
+            <li>A new dialogue box will appear.</li>
+            <li>Click the <em>Settings</em> button in the upper right-hand corner <img src="https://media.gettyimages.com/id/934003202/vector/gear-business-and-finance-blue-icon-pattern.jpg?s=612x612&w=0&k=20&c=jRhjrHY-KzLMLj8ClDlh7NWGNtWtqLJg7eU3GrIfcHA=" height="15" width="15" alt="Settings button">.</li>
+            <li>A dropdown menu will appear.</li>
+            <li>Adjacent to the <em>Vimeo</em> heading, click the <strong>Customize</strong> button.</li>
+            <li>On the new page that opens, scroll down to <em>Thumbnail</em>.</li>
+            <li>Click the pencil icon <img src="https://purepng.com/public/uploads/large/purepng.com-pencilpencilnarrowsolid-pigment-corecharcoal-pencilsgreyblack-1421526585181iwtwg.png" height="15" width="10" alt="Pencil image">.</li>
+            <li>Click <em>Manage settings</em>.</li>
+            <li>In the new dialog box that appears, click <em>Upload</em>.</li>
+            <li>Open the <em>Pictures</em> folder and then the current month&rsquo;s folder (if not found, open the <em>Downloads</em> <em>folder</em>).</li>
+            <li>Select the appropriate thumbnail:</li>
                 <ul>
-                    <li>Select the Saint John's Cathedral account for both by clicking the <em>3 dots</em>.</li>
-                    <li>Click <strong>Manage Settings</strong>. Follow the instructions.</li>
+                    <li> Choral Eucharist: <em>T_CE_[date]</em></li>
+                    <li> Wilderness: <em>T_WI_[date]</em></li>
+                    <li>Dean's Forum: <em>See correct thumbnail.</em></li>
+                    <li>Special Services: <em>See correct thumbnail.</em></li>
                 </ul>
+            <li>Save, and you will see the preview change with the updated thumbnail.</li>
+                <ul>
+                    <li><em>If streaming a Wedding, Funeral or Special Event, DISREGARD the following &ldquo;Destinations Discussion&rdquo;:</em></li>
+                </ul>
+            <li>Return to the dropdown menu and go to <strong>Destinations</strong>.</li>
+            <ul>
+                <li>Scroll down to <em>Facebook</em> and <em>YouTube</em>, selecting the Saint John&rsquo;s account for each.</li>
+                <li>Load each account.</li>
+                <li>Do not load using any of the personal accounts.</li>
+            </ul>
         </ul>
 
         <h4>Step 7</h4>
 
         <ul>
-            <li>While still in the Vimeo tab, click the <strong>link</strong> icon at the top right.</li>
-            <li>Copy the link provided.</li>
-            <li>Paste and open in a new tab.</li>
-            <li>Press the D key on the keyboard.</li>
-            <li>In the upper left-hand corner, copy the numeric <strong><em>Clip ID</em></strong>.</li>
-            <li><strong><span style="text-decoration: underline"><span style="color:red">Keep this tab open</span></span></strong> in case the Clip ID needs to be copied again.</li>  
+            <li>Finally, click the link icon <img src="https://media.gettyimages.com/id/1202294861/vector/chain-and-link-icon-flat-design.jpg?s=612x612&w=0&k=20&c=QUolhM0jg6JWQDnEhw4k67E2UGoQiO8-niVtLcwmH2o=" height="20" width="20" alt="Link icon"> in the upper right-hand corner.</li> 
+            <li>Copy the link, paste it into a new tab, and open it.</li>
+            <li>Press the D key.</li>
+            <li>In the small box that opens, copy the numeric <em>Clip ID</em>.</li>
+            <li><em>Keep this tab and the other Vimeo tab open</em>.</li>
         </ul>
 
+       
         <br>
+
+
 
         <script>
             document.getElementById("vim").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Connecting to Vimeo. Step 5. Open Google Chrome. Click Vimeo in the Bookmarks bar. Click the large blue button, Create. Select Host Event. In the dialog box that appears, click Choose Event Type. On the next slide, confirm that Life event broadcast is selected and click Next. In the next dialog box, complete the Title field as follows: In the text box that appears, type the name of the service: For the 10:30 am service: Choral Eucharist comma Rite II comma open bracket date of service close bracket. For the Wilderness: The Wilderness comma open bracket date of service close bracket. For the Dean's Forum: Dean's Forum with open bracket Guest Name close bracket comma open bracket date close bracket. For other services: Name of Service comma open bracket date of service close bracket. In the Start and End fields, enter the date, plus the start and end times of the service. Verify that Link privacy is set to Public. Click Create. A new page will appear. Click Player and then Customize Player. Scroll down the list of options to Thumbnail. Click the pencil icon. Click the Manage settings bubble that appears. In the new box that opens, click Upload. Open the Pictures folder (if not found, open the Downloads folder). As before, open the current month's folder, and select the appropriate thumbnail: Choral Eucharist: T underscore, CE underscore, open bracket date, close bracket, Wilderness: T underscore, WI underscore, open bracket, date, close bracket, Dean's Forum: See correct thumbnail, Special Services: See correct thumbnail. Step 6. Go back to the original Vimeo tab. Click the Settings button. Select Destinations from the drop down menu. Connect to Facebook and YouTube: Select the Saint John's Cathedral account for both by clicking the 3 dots. Click Manage Settings. Follow the instructions. Step 7. While still in the Vimeo tab, click the link icon at the top right. Copy the link provided. Paste and open in a new tab. Press the D key on the keyboard. In the upper left-hand corner, copy the numeric Clip ID. Keep this tab open in case the Clip ID needs to be copied again.");
+               var text = ("Connecting to Vimeo. Step 5. Open Google Chrome. Click Vimeo in the Bookmarks bar. Click the large blue button, New. Select Host Event from the dropdown menu. In the dialogue box that appears, click Choose event type. In the dialog box that appears, confirm that Live broadcast and Stream with RTMP are selected. Click Next. In the dialogue box that appears, complete the Title field as follows: For the 10:30 am service: Choral Eucharist comma Rite II comma open bracket date of service close bracket. For the Wilderness: The Wilderness comma open bracket date of service close bracket. For the Dean's Forum: Dean's Forum with open bracket Guest Name close bracket comma open bracket date close bracket. For other services: Name of Service comma open bracket date of service close bracket. Complete the Start and End fields. Enter the date as well as the start and end times of the service. Do Not Skip This Step! It creates a countdown to let viewers know when the service starts. Verify that Link privacy is set to Public. Click Create. Step 6. A new dialogue box will appear. Click the Settings button in the upper right-hand corner. A dropdown menu will appear. Adjacent to the Vimeo heading, click the Customize button. On the new page that opens, scroll down to Thumbnail. Click the pencil icon. Click Manage Settings. In the new dialog box that appears, click Upload. Open the Pictures folder and then the current month's folder (if noty found, open the Downloads folder). Select the appropriate thumbnail: Choral Eucharist: T underscore, CE underscore, open bracket date, close bracket, Wilderness: T underscore, WI underscore, open bracket, date, close bracket, Dean's Forum: See correct thumbnail, Special Services: See correct thumbnail. Save, and you will see the preview changes with the updated thumbnail. If streaming a Wedding, Funeral or Special Event, DISREGARD the following Destinations Discussion: Return to the dropdown menu and go to Destinations. Scroll down to Facebook and YouTube, selecting the Saint John's account for each. Load each account. Do not load using any of the personal accounts. Step 7. Finally, click the link icon in the upper left-hand corner. Copy the link, paste it into a new tab, and open it. Press the D key. In the small box that opens, copy the numeric Clip ID. Keep this tab and the other Vimeo tab open.");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
@@ -451,39 +463,51 @@
 
 
 
-        <span style="text-align: center"><h3>Updating the Saint John&#8217;s Homepage</h3><button class="button" style="font-size:x-small;" id="upd">Read Aloud</button></span>
+        <span style="text-align: center"><h3>Updating the Saint John's Homepage</h3><button class="button" style="font-size:x-small;" id="upd">Read Aloud</button></span>
 
         <h4>Step 8</h4>
 
         <ul>
-            <li><strong>Special Services have their own homepage and <em>not</em> the SJC homepage.</strong></li>
-            <li>Open a new browser tab, and click on the <strong>SJC WP Admin</strong> bookmark.</li>
+            <li>Open a new tab and click the <em>SJC WP Admin</em> bookmark.</li>
             <li>Login to the SJCathedral.org page using the provided credentials.</li>
-            <li>In the upper left corner under Saint John's Cathedral, select <strong>Visit Site</strong>.</li>
                 <ul>
-                    <li>If streaming a wedding, type <em><strong>https://sjcathedral.org/wedding-service/</strong></em> into the address bar, and enter.</li>
-                    <li>If streaming a funeral, type <em><strong>https://sjcathedral.org/funeral-service/</strong></em> into the address bar, and enter.</li>
-                    <li>If streaming a special event, type <em><strong>https://sjcathedral.org/special-event/</strong></em> into the address bar, and enter.</li>
+                    <li><em>If streaming a Wedding, Funeral or Special Event, do the following:</em></li>
+                        <ul>
+                            <li>Scroll down the left side and select the <strong>Pages</strong> tab.</li>
+                        </ul>
+                        <ul>
+                            <li>a. Weddings are embedded on the Wedding Service page: https://sjcathedral.org/wedding-service/</li>
+                        </ul>
+                        <ul>
+                            <li>b. Funerals are embedded on the Funeral Service page: https://sjcathedral.org/funeral-service/</li>
+                        </ul>
+                        <ul>
+                            <li>c. Special services are embedded on the Special Event page: https://sjcathedral.org/special-event/</li>
+                        </ul>
+                <ul>
+                    <li>Select the appropriate page and click <strong>Edit</strong>.</li>
+                        <ul>
+                            <li>On the page that loads, locate text box labled <em>Video URL</em>.</li>
+                            <li>Paste the copied Clip ID at the end of the string: https://vimeo.com/</li>
+                            <li>Click the blue button <span style="color:blue">Update</span>.</li>
+                        </ul>
                 </ul>
-            <li>On the next page, in the top menu bar, click <strong>Edit Page.</strong></li>
+            <li>In the upper left corner under Saint John&rsquo;s Cathedral, select <strong>Visit Site</strong>.</li>
+            <li>On the page that loads, click <strong>Edit Page</strong> in the top menu bar.</li>
+            <li>Scroll down to <em>intro Settings</em>.</li>
+            <li>Locate text box labled <em>Video URL</em>.</li>
+            <li>Paste the copied Clip ID at the end of the string: https://vimeo.com/</li>
+            <li>Click the blue button <span style="color:blue">Update</span>.</li>
         </ul>
 
-        <h4>Step 9</h4>
-
-        <ul>
-            <li>In the editing page that loads, scroll down to the section labeled <em>Intro Settings</em>.</li>
-            <li>In the box labeled <em>Video URL</em>, highlight the string of numbers at the end and paste the Clip ID copied previously.</li>
-            <li>Click the blue <strong><span style="color:blue">Update</span></strong> button to save changes.</li>
-            <li>Return to the homepage using the <em>Visit Site</em> button to assure that the homepage has been updated.</li>
-        </ul>
-
+        
         <br>
 
 
         <script>
             document.getElementById("upd").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Updating the Saint John's Homepage. Step 8. Special Services have their own homepage and not the SJC homepage. Open a new browser tab, and click on the SJC WP Admin bookmark. Login to the SJCathedral dot org page using the provided credentials. In the upper left corner under Saint John's Cathedral, select Visit Site. If streaming a wedding, type https://sjcathedral.org/wedding-service slash, into the address bar, and enter. If streaming a funeral, type https://sjcathedral.org/funeral-service slash, into the address bar, and enter. If streaming a special event, type https://sjcathedral.org/special-event slash, into the address bar, and enter. On the next page, in the top menu bar, click Edit Page. Step 9. In the editing page that loads, scroll down to the section labeled Intro Settings. In the box labeled Video URL, highlight the string of numbers at the end and paste the Clip ID copied previously. Click the blue Update button to save changes. Return to the homepage using the Visit Site button to assure that the homepage has been updated.");
+               var text = ("Updating the Saint John's Homepage. Step 8. Open a new tab and click the SJC WP Admin bookmark. Login to the SJCathedral.org page using the provided credentials. If streaming a Wedding, Funeral or Special Event, do the following: Scroll down the left side and select the Pages tab. a. Weddings are embedded on the Wedding Service page: https://sjcathedral.org/wedding-service/. b. Funerals are embedded on the Funeral Service page: https://sjcathedral.org/funeral-service/. c. Special services are embedded on the Special Event page: https://sjcathedral.org/special-event/. Select the appropriate page and click Edit. On the page that loads, locate text box labled Video URL. Paste the copied Clip ID at the end of the string: https://vimeo.com/. Click the blue button Update. In the upper left corner under Saint John’s Cathedral, select Visit Site. On the page that loads, click Edit Page in the top menu bar. Scroll down to intro Settings. Locate text box labled Video URL. Paste the copied Clip ID at the end of the string: https://vimeo.com/. Click the blue button Update.");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
@@ -493,38 +517,24 @@
         <span style="text-align: center"><h3>Starting the Stream</h3><button class="button" style="font-size:x-small;" id="str">Read Aloud</button></span>
 
 
-        <h4>Step 10</h4>
+        <h4>Step 9</h4>
+        <br>
 
         <ul>
-            <li>About 10 minutes before the service begins, begin the stream by clicking the <strong>Record</strong> button.</li>
-            <li>In the <em>Output Settings</em> window, in the <strong>Destination</strong> dropdown, select <em>Record to Disk-MOV</em>.</li>
-            <li>In the <em>File</em> field, click <em>Browse</em>, and select <strong>D:</strong>/ drive.</li>
-            <li>Click <strong>Save</strong>.</li>
+            <li>About 10 minutes before the service begins, go back to the Wirecast screen.</li>
+            <li>In the topmost toolbar, open the <em>Output Settings</em> window by going to <em>Output > Output Settings</em> (or press Ctrl + Y).</li>
+            <li>On the page that loads, click <strong>STREAM TO VIMEO</strong>.</li>
+            <li>The RECORDING preset is <img src="https://media.gettyimages.com/id/1949263675/photo/black-check-mark-icon-tick-symbol-right-icon-tick-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=nyE2-_NGijQPkxf59Osg1bUGYDQsVtgcK8LDWrHzfD0=" height="15" width="15" alt="Check mark">&rsquo;ed.</li>
+            <li>Go back to the opened Vimeo tab. <em>Connect encoder to begin stream prerview</em> will be in the middle of the screen.</li>
+            <li>Copy the RTMPS URL and paste it into the <em>Address:</em> box in the Wirecast Output Settings Window.</li>
+            <li>Copy the Stream key and paste it into the <em>Stream:</em> box in the Wirecast Output Settings Window.</li>
             <li>Click <strong>OK</strong>.</li>
-            <li>Click the Record button again at the top to begin recording.</li>
+            <li>Click the <em>Record</em> button. It will turn green <strong><span style="color:green">Record</span></strong>.</li>
+            <li>Click the <em>Stream</em> button. It will turn green <strong><span style="color:green">Stream</span></strong>.</li>
+            <li>The Stream Is Now Live!</li>
         </ul>
 
-        <h4>Step 11</h4>
-
-        <ul>
-            <li>Click the <strong>Stream</strong> button at the top.</li>
-            <li>In the window that appears, go to the <strong>Destination</strong> dropdown <span style="color: red">again</span> and select <em>RTMP server</em>.</li>
-            <li><span style="color: red">Go back to <em>Vimeo</em></span>, click on the <strong>stream</strong> button in the upper left-hand corner.</li>
-            <li>Copy the link labeled <em>RTMPS URL</em> and paste it into the <em>Address</em> section in the Output Settings window in Wirecast.</li>
-            <li>Copy the <em>Stream Key</em> from Vimeo.</li>
-            <li>Paste the stream key into the stream field in Wirecast.</li>
-            <li>Click <strong>OK</strong>.</li>
-            <li>Click <strong>Stream</strong> again at the top.</li>
-            <li>The Stream button will flash green before coming solid.</li>
-            <li>The stream is now live!</li>
-        </ul>
-
-        <h4>Step 12</h4>
-
-        <ul>
-            <li>Set output to <strong><em><span style="color:dimgray">Smooth</span></em></strong> in the Wirecast window.</li>
-            <li>Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.</li>
-        </ul>
+        
 
         <br>
 
@@ -532,16 +542,16 @@
         <script>
             document.getElementById("str").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Starting the Stream. Step 10. About 10 minutes before the service begins, begin the stream by clicking the Re cord button. In the Output Settings window, in the Destination dropdown, select Re cord to Disk dash M O V. In the File field, click Browse, and select D colon slash drive. Click Save. Click OK. Click the Re cord button again at the top to begin re cording.  Step 11. Click the Stream button at the top. In the window that appears, go to the Destination drop down, again, and select RTMP server. Go back to Vimeo, click on the stream button in the upper left hand corner. Copy the link labeled RTMPS URL and paste it into the Address section in the Output Settings window in Wirecast. Copy the Stream Key from Vimeo. Paste the Stream Key into the Stream field in Wirecast. Click OK. Click Stream again at the top. The Stream button will flash green before coming solid. The stream is now live! Step 12. Set output to Smooth in the Wirecast window. Open YouTube or Facebook on your mobile device to verify that the video is being broadcast.");
+               var text = ("Starting the Stream. Step 9. About 10 minutes before the service begins, go back to the Wirecast screen. In the topmost toolbar, open the Output Settings window by going to Output, Output Settings (or press Ctrl + Y). On the page that loads, click STREAM TO VIMEO. The RECORDING preset is Check marked. Go back to the opened Vimeo tab. Connect encoder to begin stream prerview will be in the middle of the screen. Copy the RTMPS URL and paste it into the Address: box in the Wirecast Output Settings Window. Copy the Stream key and paste it into the Stream: box in the Wirecast Output Settings Window. Click OK. Click the Record button. It will turn green Record. Click the Stream button. It will turn green Stream. The Stream Is Now Live!");
                var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
         </script>
 
 
-        <span style="text-align: center"><h3>Streaming Dean's Forum Screen Presentation</h3><button class="button" style="font-size:x-small;" id="pres">Read Aloud</button></span>
+        <!---<span style="text-align: center"><h3>Streaming Dean's Forum Screen Presentation</h3><button class="button" style="font-size:x-small;" id="pres">Read Aloud</button></span>
 
-        <h4>Step 13</h4>
+        <h4>Step 15</h4>
 
         <ul>
             <li>On the Dagwell computer, open <em>Novocast</em>.</li>
@@ -560,26 +570,28 @@
 
         <br>
 
+
         <script>
             document.getElementById("pres").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Streaming Dean's Forum Screen Presentation. Step 13. On the Dagwell computer, open Novocast. Select Dagwell Projector. This will project the presentation onto the screen in house. The presentation is streamed via screen capture. In Wirecast, click the Screen Capture function in Layer 2. This will record whatever is showing on the main (left) monitor. Be sure to have the presentation open on the left screen! The picture in picture option in Layer 3 is activated by clicking one of the two video options in Layer 2.")
+               var text = ("Streaming Dean's Forum Screen Presentation. Step 15. On the Dagwell computer, open Novocast. Select Dagwell Projector. This will project the presentation onto the screen in house. The presentation is streamed via screen capture. In Wirecast, click the Screen Capture function in Layer 2. This will record whatever is showing on the main (left) monitor. Be sure to have the presentation open on the left screen! The picture in picture option in Layer 3 is activated by clicking one of the two video options in Layer 2.")
                var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
-        </script>
+        </script>--->
 
 
         <span style="text-align: center"><h3>Ending the Stream</h3><button class="button" style="font-size:x-small;" id="endst">Read Aloud</button></span>
 
-        <h4>Step 14</h4>
+        <h4>Step 10</h4>
+        <br>
 
         <ul>
-            <li>Once the service is over, end the broadcast by <strong>clicking</strong> the Stream and Record buttons in Wirecast.</li>
+            <li>Once the service is over, click the <em>Closing Screen</em> overlay and leave it up for a few seconds.</li>
+            <li>End the broadcast by clicking the Stream and Record buttons.</li>
             <li>Close the Wirecast window by clicking <span id="rainbow-text">X</span> in the upper right-hand corner.</li>
             <li>Click Save or Don't Save (generally click Don't Save if new additions like thumbnails don't need to be saved). </li>
             <li>Close Wirecast. Vimeo will automatically end the broadcast.</li>
-            <li>While closing Vimeo, click <span id="rainbow-text">End Event</span> in the upper right-hand corner.</li>
             <li>Close Google Chrome, and shut down the computer.</li>
             <li>You're done!</li>
         </ul>
@@ -594,7 +606,7 @@
         <script>
             document.getElementById("endst").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Ending the Stream. Step 14. Once the service is over, end the broadcast by clicking the Stream and Re cord buttons in Wirecast. Close the Wirecast window by clicking the red X in the upper right-hand corner. Click Save or Don't Save. Generally click Don't Save if new additions like thumbnails don't need to be saved. Close Wirecast. Vimeo will automatically end the broadcast. While closing Vimeo, click the red End Event in the upper right hand corner. Close Google Chrome, and shut down the computer. You're done!");
+               var text = ("Ending the Stream. Step 10. Once the service is over, click the Closing Screen overlay and leave it up for a few seconds. End the broadcast by clicking the Stream and Record buttons. Close the Wirecast window by clicking the red X in the upper right-hand corner. Click Save or Don't Save (generally click Don't Save if new additions like thumbnails don't need to be saved). Close Wirecast. Vimeo will automatically end the broadcast. Close Google Chrome, and shut down the computer. You're done!");
                var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
