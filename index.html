@@ -157,6 +157,7 @@
                 <button type="button" style="font-size: smaller;" id="nocamera">No Cameras</button>
                 <button type="button" style="font-size: smaller;" id="copyclipid">Copying Clip-ID</button>
                 <button type="button" style="font-size: smaller;" id="dagwellsound">Dagwell Soundboard</button>
+                <button type="button" style="font-size: smaller;" id="fuzzy">Fuzzy Image</button>
             </div>
 
         </header>
@@ -284,6 +285,22 @@
                     <button class="button" type="reset" id="canceldagwellsoundboard">Close</button>
                 </div>
             </dialog>
+
+
+            <dialog id="fuzzyimage">
+                <h4>Picture is Washed Out (too bright)</h4>
+                    <ul>
+                        <li>On the camera controller, locate the knob labeled <em>Iris</em>.</li>  
+                        <li>Next to it is a button labeled <em>Auto</em>.</li>
+                            <ul>
+                                <li>If <span style="color:maroon"><em>Auto</em></span> is lit up, press it to turn it off.</li>
+                                <li>One can then manually adjust the iris, controlling the amount of light entering the camera.</li>
+                            </ul>
+                    </ul>
+                    <div id="open">
+                        <button class="button" type="reset" id="cancelfuzzyimage">Close</button>
+                    </div>
+                </dialog>
 
 
 
@@ -518,7 +535,7 @@
         <script>
             document.getElementById("upd").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Updating the Saint John's Homepage. Step 8. Open a new tab and click the SJC WP Admin bookmark. Login to the SJCathedral.org page using the provided credentials. If streaming a Wedding, Funeral or Special Event, do the following: Scroll down the left side and select the Pages tab. a. Weddings are embedded on the Wedding Service page: https://sjcathedral.org/wedding-service/. b. Funerals are embedded on the Funeral Service page: https://sjcathedral.org/funeral-service/. c. Special services are embedded on the Special Event page: https://sjcathedral.org/special-event/. Select the appropriate page and click Edit. On the page that loads, locate text box labled Video URL. Paste the copied Clip ID at the end of the string: https://vimeo.com/. Click the blue button Update. In the upper left corner under Saint John’s Cathedral, select Visit Site. On the page that loads, click Edit Page in the top menu bar. Scroll down to intro Settings. Locate text box labled Video URL. Paste the copied Clip ID at the end of the string: https://vimeo.com/. Click the blue button Update.");
+               var text = ("Updating the Saint John's Homepage. Step 8. Open a new tab and click the SJC WP Admin bookmark. Login to the SJCathedral.org page using the provided credentials. If streaming a Wedding, Funeral or Special Event, do the following after doing the two afore mentioned items: Scroll down the left side and select the Pages tab. a. Weddings are embedded on the Wedding Service page: https://sjcathedral.org/wedding-service/. b. Funerals are embedded on the Funeral Service page: https://sjcathedral.org/funeral-service/. c. Special services are embedded on the Special Event page: https://sjcathedral.org/special-event/. Select the appropriate page and click Edit. On the page that loads, locate text box labled Video URL. Paste the copied Clip ID at the end of the string: https://vimeo.com/. Click the blue button Update. In the upper left corner under Saint John’s Cathedral, select Visit Site. On the page that loads, click Edit Page in the top menu bar. Scroll down to intro Settings. Locate text box labled Video URL. Paste the copied Clip ID at the end of the string: https://vimeo.com/. Click the blue button Update.");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
@@ -784,6 +801,18 @@
            document.getElementById("canceldagwellsoundboard").addEventListener("click",discreption20,false);
            function discreption20() {
                 dialog = document.getElementById("dagwellsoundboard");
+                dialog.close();   
+           };
+
+
+           document.getElementById("fuzzy").addEventListener("click",discreption21,false);
+           function discreption21() {
+                dialog = document.getElementById("fuzzyimage");
+                dialog.show();   
+           };
+           document.getElementById("cancelfuzzyimage").addEventListener("click",discreption22,false);
+           function discreption22() {
+                dialog = document.getElementById("fuzzyimage");
                 dialog.close();   
            };
 
