@@ -91,18 +91,6 @@
         button:active {
             background-color: limegreen;
          }
-    #problems {
-            border-style: double;
-            border-color: red;
-            background-color: #8AA5C1;
-            color: red;
-        }
-        #problems:hover { cursor: pointer;
-        background-color: lightgreen;
-        }
-       #problems:active {
-            background-color: limegreen;
-         }
     #help {
         background-color: #8AA5C1;
     }
@@ -293,7 +281,9 @@
                     </div>
                 </dialog>
 
+        <br>
 
+        <br>
 
         <span style="text-align: center"><h3>Arrival & Wirecast Setup</h3><button class="button" style="font-size:x-small;" id="arrive">Read Aloud</button></span>
 
@@ -343,6 +333,7 @@
         <ul>
             <li>In the title overlay, click the large plus sign <strong>(+)</strong>.</li>
             <li>In the window that opens, go to <em>Media Files</em> > <em>Browse Disk</em>.</li>
+            <li>Click <strong>Add</strong>.</li>
             <LI>Open the <strong>Pictures</strong> <em>folder</em> (if not found, open the <strong>Downloads</strong> <em>folder</em>).</LI>
             <li>The thumbnails are arranged by month, and then by platform.</li>
             <li>Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo.</li>
@@ -350,8 +341,13 @@
             <li>Select the file for today's service:</li>
                 <li>Choral Eucharist: <strong>CE_[date]</strong></li>
                 <li>Wilderness: <strong>WI_[date]</strong></li>
-                <li>Dean's Forum: Thumbnails in the Pictures folder.</li>
-                <li>Special Services: Have their own thumbnails.</li> 
+        </ul>
+        <ul>
+            <li>Click <strong>Open</strong>.</li>
+        </ul>
+        <ul>
+            <li>Dean's Forum: Thumbnails in the Pictures folder.</li>
+            <li>Special Services: Have their own thumbnails.</li> 
         </ul>
 
         <br>
@@ -359,7 +355,7 @@
         <script>
             document.getElementById("doc").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Updating the Service Document. Step 2. Click on the title overlay in the first layer labeled Sermon. Click Preacher. Click on the Layer Settings button (the 3 dots in the upper right-hand corner). In the Text field, update preacher as their name appears in the service leaflet. Adjust text field if necessary. Step 3. In the title overlay, click the large plus sign. In the window that opens, go to Media Files, Browse Disk. Open the Pictures folder (If not found, open the Downloads folder). The thumbnails are arranged by month, and then by platform. Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo. Open the Wire cast folder. Select the file for today's service: Choral Eucharist: CE underscore, open bracket, date, close bracket. Wilderness: WI underscore, open bracket, date, close bracket. Dean's Forum: Thumbnails in the Pictures folder. Special Services: Have their own thumbnails.");
+               var text = ("Updating the Service Document. Step 2. Click on the title overlay in the first layer labeled Sermon. Click Preacher. Click on the Layer Settings button (the 3 dots in the upper right-hand corner). In the Text field, update preacher as their name appears in the service leaflet. Adjust text field if necessary. Step 3. In the title overlay, click the large plus sign. In the window that opens, go to Media Files, Browse Disk. Click Add. Open the Pictures folder (If not found, open the Downloads folder). The thumbnails are arranged by month, and then by platform. Look at the various thumbnails. Each service has two thumbnails, one for Wirecast and one for Vimeo. Open the Wire cast folder. Select the file for today's service: Choral Eucharist: CE underscore, open bracket, date, close bracket. Wilderness: WI underscore, open bracket, date, close bracket. Click Open. Dean's Forum: Thumbnails in the Pictures folder. Special Services: Have their own thumbnails.");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
@@ -398,7 +394,7 @@
         <ul>
             <li>Open Google Chrome.</li>
             <li>Click <strong>Vimeo</strong> in the Bookmarks bar.</li>
-            <li>Click the large blue button <strong><span style="color:blue">New</span></strong>.</li>
+            <li>Click the large button <strong>New</strong>.</li>
             <li>Select <em>Host Event</em> from the dropdown menu.</li>
             <li>In the dialogue box that appears, click <strong>Choose event type</strong>.</li>
             <li>In the dialog box that appears, confirm that <strong>Live broadcast</strong> and <strong>Stream with RTMP</strong> are selected.</li>
@@ -423,12 +419,12 @@
 
         <ul>
             <li>A new dialogue box will appear.</li>
-            <li>Click the <em>Settings</em> button in the upper right-hand corner <img src="https://media.gettyimages.com/id/934003202/vector/gear-business-and-finance-blue-icon-pattern.jpg?s=612x612&w=0&k=20&c=jRhjrHY-KzLMLj8ClDlh7NWGNtWtqLJg7eU3GrIfcHA=" height="15" width="15" alt="Settings button">.</li>
+            <li>Click the <em>Settings</em> button in the upper right corner <img src="https://media.gettyimages.com/id/934003202/vector/gear-business-and-finance-blue-icon-pattern.jpg?s=612x612&w=0&k=20&c=jRhjrHY-KzLMLj8ClDlh7NWGNtWtqLJg7eU3GrIfcHA=" height="15" width="15" alt="Settings button">.</li>
             <li>A dropdown menu will appear.</li>
+            <li> Go to the <strong>Destinations</strong> tab.</li>
             <li>Adjacent to the <em>Vimeo</em> heading, click the <strong>Customize</strong> button.</li>
             <li>On the new page that opens, scroll down to <em>Thumbnail</em>.</li>
             <li>Click the pencil icon <img src="https://purepng.com/public/uploads/large/purepng.com-pencilpencilnarrowsolid-pigment-corecharcoal-pencilsgreyblack-1421526585181iwtwg.png" height="15" width="10" alt="Pencil image">.</li>
-            <li>Click <em>Manage settings</em>.</li>
             <li>In the new dialog box that appears, click <em>Upload</em>.</li>
             <li>Open the <em>Pictures</em> folder and then the current month&rsquo;s folder (if not found, open the <em>Downloads</em> <em>folder</em>).</li>
             <li>Select the appropriate thumbnail:</li>
@@ -438,13 +434,12 @@
                     <li>Dean's Forum: <em>See correct thumbnail.</em></li>
                     <li>Special Services: <em>See correct thumbnail.</em></li>
                 </ul>
+            <li>Click <strong>Open</strong>.</li>
             <li>Save, and you will see the preview change with the updated thumbnail.</li>
-                <ul>
-                    <div id="special">
-                        <em>If streaming a Wedding, Funeral or Special Event, DISREGARD the following &ldquo;Destinations Discussion&rdquo;:</em>
-                    </div>
-                </ul>
-            <li>Return to the dropdown menu and go to <strong>Destinations</strong>.</li>
+            <div id="special">
+                    <em>If streaming a Wedding, Funeral or Special Event, DISREGARD the following &ldquo;Destinations Discussion&rdquo;:</em>
+            </div>
+            <li>Return to the dropdown menu by <span style="color:red">clicking the back arrow <span style="font-size: 1em">&#129120;</span> in the upper left-hand corner</span>, and go to <strong>Destinations</strong>.</li>
             <ul>
                 <li>Scroll down to <em>Facebook</em> and <em>YouTube</em>, selecting the Saint John&rsquo;s account for each.</li>
                 <li>Load each account.</li>
@@ -459,26 +454,23 @@
             <li>Copy the link, paste it into a new tab, and open it.</li>
             <li>Press the D key.</li>
             <li>In the small box that opens, copy the numeric <em>Clip ID</em>.</li>
-            <li><em>Keep this tab and the other Vimeo tab open</em>.</li>
+            <li><em>Keep this tab open</em>.</li>
         </ul>
-
-       
-        <br>
-
 
 
         <script>
             document.getElementById("vim").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Connecting to Vimeo. Step 5. Open Google Chrome. Click Vimeo in the Bookmarks bar. Click the large blue button, New. Select Host Event from the dropdown menu. In the dialogue box that appears, click Choose event type. In the dialog box that appears, confirm that Live broadcast and Stream with RTMP are selected. Click Next. In the dialogue box that appears, complete the Title field as follows: For the 10:30 am service: Choral Eucharist comma Rite II comma open bracket date of service close bracket. For the Wilderness: The Wilderness comma open bracket date of service close bracket. For the Dean's Forum: Dean's Forum with open bracket Guest Name close bracket comma open bracket date close bracket. For other services: Name of Service comma open bracket date of service close bracket. Complete the Start and End fields. Enter the date as well as the start and end times of the service. Do Not Skip This Step! It creates a countdown to let viewers know when the service starts. Verify that Link privacy is set to Public. Click Create. Step 6. A new dialogue box will appear. Click the Settings button in the upper right-hand corner. A dropdown menu will appear. Adjacent to the Vimeo heading, click the Customize button. On the new page that opens, scroll down to Thumbnail. Click the pencil icon. Click Manage Settings. In the new dialog box that appears, click Upload. Open the Pictures folder and then the current month's folder (if not found, open the Downloads folder). Select the appropriate thumbnail: Choral Eucharist: T underscore, CE underscore, open bracket date, close bracket, Wilderness: T underscore, WI underscore, open bracket, date, close bracket, Dean's Forum: See correct thumbnail, Special Services: See correct thumbnail. Save, and you will see the preview change with the updated thumbnail. If streaming a Wedding, Funeral or Special Event, DISREGARD the following Destinations Discussion: Return to the dropdown menu and go to Destinations. Scroll down to Facebook and YouTube, selecting the Saint John's account for each. Load each account. Do not load using any of the personal accounts. Step 7. Finally, click the link icon in the upper right-hand corner. Copy the link, paste it into a new tab, and open it. Press the D key. In the small box that opens, copy the numeric Clip ID. Keep this tab and the other Vimeo tab open.");
+               var text = ("Connecting to Vimeo. Step 5. Open Google Chrome. Click Vimeo in the Bookmarks bar. Click the large button, New. Select Host Event from the dropdown menu. In the dialogue box that appears, click Choose event type. In the dialog box that appears, confirm that Live broadcast and Stream with RTMP are selected. Click Next. In the dialogue box that appears, complete the Title field as follows: For the 10:30 am service: Choral Eucharist comma Rite II comma open bracket date of service close bracket. For the Wilderness: The Wilderness comma open bracket date of service close bracket. For the Dean's Forum: Dean's Forum with open bracket Guest Name close bracket comma open bracket date close bracket. For other services: Name of Service comma open bracket date of service close bracket. Complete the Start and End fields. Enter the date as well as the start and end times of the service. Do Not Skip This Step! It creates a countdown to let viewers know when the service starts. Verify that Link privacy is set to Public. Click Create. Step 6. A new dialogue box will appear. Click the Settings button in the upper right corner. A dropdown menu will appear. Go to the Destinations tab. Adjacent to the Vimeo heading, click the Customize button. On the new page that opens, scroll down to Thumbnail. Click the pencil icon. In the new dialog box that appears, click Upload. Open the Pictures folder and then the current month's folder (if not found, open the Downloads folder). Select the appropriate thumbnail: Choral Eucharist: T underscore, CE underscore, open bracket date, close bracket, Wilderness: T underscore, WI underscore, open bracket, date, close bracket, Dean's Forum: See correct thumbnail, Special Services: See correct thumbnail. Click Open. Save, and you will see the preview change with the updated thumbnail. If streaming a Wedding, Funeral or Special Event, DISREGARD the following Destinations Discussion: Return to the dropdown menu by clicking the back arrow in the upper left-hand corner, and go to Destinations. Scroll down to Facebook and YouTube, selecting the Saint John's account for each. Load each account. Do not load using any of the personal accounts. Step 7. Finally, click the link icon in the upper right-hand corner. Copy the link, paste it into a new tab, and open it. Press the D key. In the small box that opens, copy the numeric Clip ID. Keep this tab open.");
                 var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
         </script>
 
-
+        <br>
 
         <span style="text-align: center"><h3>Updating the Saint John's Homepage</h3><button class="button" style="font-size:x-small;" id="upd">Read Aloud</button></span>
+
 
         <h4>Step 8</h4>
 
@@ -521,9 +513,7 @@
             <li>Click the blue button <span style="color:blue">Update</span>.</li>
         </ul>
 
-        
         <br>
-
 
         <script>
             document.getElementById("upd").addEventListener("click", readText, false);
@@ -544,8 +534,8 @@
         <ul>
             <li>About 10 minutes before the service begins, go back to the Wirecast screen.</li>
             <li>In the topmost toolbar, open the <em>Output Settings</em> window by going to <em>Output > Output Settings</em> (or press Ctrl + Y).</li>
-            <li>On the page that loads, click <strong>STREAM TO VIMEO</strong>.</li>
             <li>The RECORDING preset is <img src="https://media.gettyimages.com/id/1949263675/photo/black-check-mark-icon-tick-symbol-right-icon-tick-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=nyE2-_NGijQPkxf59Osg1bUGYDQsVtgcK8LDWrHzfD0=" height="15" width="15" alt="Check mark">&rsquo;ed.</li>
+            <li>On the page that loads, click <strong>STREAM TO VIMEO</strong>.</li>
             <li>Go back to the opened Vimeo tab. <em>Connect encoder to begin stream prerview</em> will be in the middle of the screen.</li>
             <li>Copy the RTMPS URL and paste it into the <em>Address:</em> box in the Wirecast Output Settings Window.</li>
             <li>Copy the Stream key and paste it into the <em>Stream:</em> box in the Wirecast Output Settings Window.</li>
@@ -563,7 +553,7 @@
         <script>
             document.getElementById("str").addEventListener("click", readText, false);
                function readText() {
-               var text = ("Starting the Stream. Step 9. About 10 minutes before the service begins, go back to the Wirecast screen. In the topmost toolbar, open the Output Settings window by going to Output, Output Settings (or press Ctrl + Y). On the page that loads, click STREAM TO VIMEO. The RECORDING preset is Check marked. Go back to the opened Vimeo tab. Connect encoder to begin stream prerview will be in the middle of the screen. Copy the RTMPS URL and paste it into the Address: box in the Wirecast Output Settings Window. Copy the Stream key and paste it into the Stream: box in the Wirecast Output Settings Window. Click OK. Click the Re cord button. It will turn green Re cord. Click the Stream button. It will turn green Stream. The Stream Is Now Live!");
+               var text = ("Starting the Stream. Step 9. About 10 minutes before the service begins, go back to the Wirecast screen. In the topmost toolbar, open the Output Settings window by going to Output, Output Settings (or press Ctrl + Y). The RECORDING preset is Check marked. On the page that loads, click STREAM TO VIMEO. Go back to the opened Vimeo tab. Connect encoder to begin stream prerview will be in the middle of the screen. Copy the RTMPS URL and paste it into the Address: box in the Wirecast Output Settings Window. Copy the Stream key and paste it into the Stream: box in the Wirecast Output Settings Window. Click OK. Click the Re cord button. It will turn green Re cord. Click the Stream button. It will turn green Stream. The Stream Is Now Live!");
                var msg = new SpeechSynthesisUtterance(text);
                 window.speechSynthesis.speak(msg);
                }
